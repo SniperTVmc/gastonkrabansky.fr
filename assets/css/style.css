@@ -1,26 +1,25 @@
 /* ==========================================================================
-   STYLE.CSS — Refonte Artistique & Chaleureuse (Inspirée du CV)
+   STYLE.CSS — Artistic & Warm Redesign (Inspired by the Resume)
    ========================================================================== */
 
-/* Import d'une police moderne et élégante pour une vraie identité visuelle */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
-/* --- VARIABLES DE NUANCES DE COULEURS (Inspirées des tons du CV) --- */
+/* --- COLOR SHADE VARIABLES --- */
 :root {
-    --bg-color: #0b0908;        /* Noir profond aux sous-tons chauds */
-    --second-bg: #12100f;       /* Fond secondaire brun/nuit */
-    --card-bg: #181513;         /* Fond des cartes texturé et chaleureux */
-    --card-hover: #221d1a;      /* Survol des cartes */
-    --border-color: #2e2622;    /* Bordure subtile couleur terre */
-    --border-highlight: #c88452;/* Bordure vive (cuivre) */
+    --bg-color: #0b0908;
+    --second-bg: #12100f;
+    --card-bg: #181513;
+    --card-hover: #221d1a;
+    --border-color: #2e2622;
+    --border-highlight: #c88452;
 
-    --text-color: #f7f4f0;      /* Texte principal blanc cassé chaleureux */
-    --text-secondary: #aba19a;  /* Gris taupe pour les descriptions */
+    --text-color: #f7f4f0;
+    --text-secondary: #aba19a;
 
-    --main-color: #df9b67;      /* Cuivre / Terracotta principal */
-    --main-darker: #c88452;     /* Cuivre foncé */
-    --accent-sand: #e6c5a8;     /* Sable doré (rappel des cercles du CV) */
-    --accent-bronze: #8c5837;   /* Brun bronze profond */
+    --main-color: #df9b67;
+    --main-darker: #c88452;
+    --accent-sand: #e6c5a8;
+    --accent-bronze: #8c5837;
 
     --success-color: #5b9f72;
     --warning-color: #e5a954;
@@ -32,7 +31,6 @@
 }
 
 /* --- RESET & BASE --- */
-/* --- RESET & BASE CORRIGÉ POUR LES ICÔNES --- */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -40,7 +38,6 @@
     scroll-behavior: smooth;
 }
 
-/* On applique la police principale uniquement aux éléments de texte standards */
 body, h1, h2, h3, h4, h5, h6, p, a, span, button, input, textarea, label, table {
     font-family: 'Plus Jakarta Sans', sans-serif, 'Segoe UI';
 }
@@ -169,7 +166,7 @@ h1 span {
     font-size: 1.1rem;
 }
 
-/* --- FIL D'ARIANE --- */
+/* --- BREADCRUMB --- */
 .breadcrumb {
     padding: 15px 8%;
     font-size: 0.9rem;
@@ -211,7 +208,7 @@ h1 span {
     font-size: 1.4rem;
     font-weight: 800;
     color: var(--text-color);
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 
 .nav-links {
@@ -325,7 +322,7 @@ h1 span {
     }
 }
 
-/* --- BOUTONS --- */
+/* --- BUTTONS --- */
 .btn {
     display: inline-flex;
     align-items: center;

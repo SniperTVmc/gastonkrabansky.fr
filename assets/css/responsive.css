@@ -57,6 +57,15 @@
     .skills-grid-modern {
         grid-template-columns: 1fr;
     }
+
+    .featured-grid-bottom {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .featured-project-card-landscape {
+        padding: 25px;
+    }
 }
 
 @media screen and (max-width: 768px) {

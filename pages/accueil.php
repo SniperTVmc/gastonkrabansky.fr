@@ -121,6 +121,83 @@
         </section>
 
 
+        <!-- Featured Project Section : EssentialsX-GUI -->
+        <section id="featured-project" class="container">
+            <h2 class="section-title">Mon principal <span>Projet</span></h2>
+            <p class="section-lead">
+                Découvrez mon projet open-source <b>EssentialsX-GUI</b>, un plugin Minecraft qui simplifie la gestion des serveurs Spigot/Paper grâce à des interfaces graphiques intuitives.
+            </p>
+
+            <div class="featured-project-card-landscape">
+                <!-- En-tête de la carte : Titre & Badges -->
+                <div class="featured-header-row">
+                    <div>
+                        <h3>EssentialsX-GUI</h3>
+                        <p class="featured-subtitle">Plugin Minecraft open-source développé en Java</p>
+                    </div>
+                    <div class="featured-badges">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spigot API</span>
+                        <span class="tech-tag">Gradle</span>
+                        <span class="stat-tag">+32 000 téléchargements</span>
+                    </div>
+                </div>
+
+                <!-- Aperçu visuel en format paysage (1920x1080 mis en valeur) -->
+                <div class="featured-image-landscape">
+                    <img src="/assets/images/projects/essentialsx-gui.webp"
+                         alt="Aperçu du plugin EssentialsX-GUI"
+                         width="1920" height="1080" loading="lazy">
+                </div>
+
+                <!-- Contenu en grille sous l'image -->
+                <div class="featured-grid-bottom">
+                    <div class="featured-block">
+                        <h4><i class="fas fa-info-circle"></i> De quoi s'agit-il ?</h4>
+                        <p>
+                            Conçu pour améliorer l'expérience des administrateurs de serveurs Spigot/Paper, il fournit une interface graphique conviviale pour gérer les commandes et fonctionnalités d'EssentialsX sans passer par la ligne de commande.
+                        </p>
+                    </div>
+
+                    <div class="featured-block">
+                        <h4><i class="fas fa-cogs"></i> Fonctionnalités clés</h4>
+                        <ul class="featured-list">
+                            <li>Gestion fluide des homes, kits et warps.</li>
+                            <li>Affichage des balances et gestion de l'économie.</li>
+                            <li>Support de la vente d'items et de la commande /whois.</li>
+                        </ul>
+                    </div>
+
+                    <div class="featured-metrics-col">
+                        <div class="metric-item">
+                            <i class="fas fa-server"></i>
+                            <div>
+                                <strong>~550</strong>
+                                <span>Serveurs actifs</span>
+                            </div>
+                        </div>
+                        <div class="metric-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <strong>~700</strong>
+                                <span>Joueurs en moyenne</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions de fin de carte -->
+                <div class="featured-actions-row">
+                    <a href="/projets/essentialsx-gui" class="btn btn-fill">Découvrir les détails <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/SniperTVmc/" target="_blank" class="btn btn-outline" aria-label="Voir sur GitHub"><i class="fab fa-github"></i> Code source</a>
+                    <a href="https://modrinth.com/project/essentialsx-gui" target="_blank" class="btn btn-outline" aria-label="Télécharger sur Modrinth">
+                        <i class="favorite-icon icon-modrinth" aria-hidden="true"></i> Télécharger sur Modrinth
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Footer -->
         <?php include __DIR__ . "/../includes/footer.php"; ?>
 
