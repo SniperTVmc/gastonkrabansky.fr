@@ -5,7 +5,7 @@
   "image": "../../assets/images/projects/essentialsx-gui.webp",
   "image_alt": "Aperçu du plugin EssentialsX-GUI",
   "tech_tags": ["Java", "SQL", "Gradle", "Spigot API"],
-  "stat_tags": ["Open Source", "2025 - 2026", "+32 000 téléchargements", "~550 serveurs en moyenne", "~700 joueurs en moyenne"],
+  "stat_tags": ["2025 - 2026", "Open Source", "+32 000 téléchargements", "~550 serveurs en moyenne", "~700 joueurs en moyenne"],
   "summary": "EssentialsX-GUI est un plugin Minecraft (serveurs Spigot/Paper) qui offre des interfaces graphiques conviviales pour gérer les fonctionnalités du plugin EssentialsX.",
   "sections": [
     {
