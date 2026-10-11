@@ -20,6 +20,7 @@
     <meta name="color-scheme" content="dark">
     <meta name="theme-color" content="#df9b67">
     <link rel="canonical" href="<?php echo htmlspecialchars($seo['canonical'], ENT_QUOTES, 'UTF-8'); ?>">
+    <link rel="alternate" Hreflang="fr" href="<?php echo htmlspecialchars($seo['canonical'], ENT_QUOTES, 'UTF-8'); ?>">
 
     <!-- DNS Prefetch & Preconnect -->
     <link rel="dns-prefetch" href="https://avatars.githubusercontent.com">
