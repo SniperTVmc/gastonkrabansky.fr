@@ -6,7 +6,7 @@
   "period": "01/01/2026 → 19/05/2026",
   "type": "scolaire",
   "link": {
-    "url": "/projets/detail?id=etoile-du-jeu",
+    "url": "/projets/etoile-du-jeu",
     "label": "Voir la fiche complète du projet"
   },
   "blocs_mobilises": [

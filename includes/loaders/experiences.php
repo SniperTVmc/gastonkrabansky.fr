@@ -151,7 +151,7 @@ function renderParcoursDetailHtml($item): string
     return $html;
 }
 
-function renderParcoursTimelineHtml(string $basePath = '/experiences/detail?id='): string
+function renderParcoursTimelineHtml(string $basePath = '/experiences/'): string
 {
     $proItems = getParcoursDataByType('professionnel');
     $scolaireItems = getParcoursDataByType('scolaire');
@@ -199,7 +199,7 @@ function renderTimelineItem($item, $basePath): string
     $period = htmlspecialchars($item['meta']['period'] ?? '', ENT_QUOTES, 'UTF-8');
     $summary = htmlspecialchars($item['summary'] ?? '', ENT_QUOTES, 'UTF-8');
 
-    $detailLink = $basePath . $id . "&type=" . ($item['category'] ?? 'scolaire');
+    $detailLink = $basePath . ($item['category'] ?? 'scolaire') . '/' . $id;
 
     $html = '            <div class="timeline-item">' . "\n";
     $html .= '                <h3><a href="' . $detailLink . '">' . $title . '</a></h3>' . "\n";

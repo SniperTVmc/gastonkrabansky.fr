@@ -30,6 +30,22 @@ RewriteRule ^pages/(.+)\.php$ /$1 [R=301,L,NE]
 RewriteRule ^$ pages/accueil.php [END]
 RewriteRule ^bts-sio/?$ pages/bts-sio/presentation.php [END]
 
+# Rediriger les anciennes URLs de détail vers leurs versions lisibles.
+RewriteCond %{THE_REQUEST} \s/+projets/detail\?id=([^&\s]+) [NC]
+RewriteRule ^projets/detail$ /projets/%1? [R=301,L,NE]
+RewriteCond %{THE_REQUEST} \s/+experiences/detail\?id=([^&\s]+)&type=(scolaire|professionnel) [NC]
+RewriteRule ^experiences/detail$ /experiences/%2/%1? [R=301,L,NE]
+RewriteCond %{THE_REQUEST} \s/+bts-sio/realisations/detail\?id=([^&\s]+) [NC]
+RewriteRule ^bts-sio/realisations/detail$ /bts-sio/realisations/%1? [R=301,L,NE]
+RewriteCond %{THE_REQUEST} \s/+bts-sio/veilles/detail\?id=([^&\s]+) [NC]
+RewriteRule ^bts-sio/veilles/detail$ /bts-sio/veilles/%1? [R=301,L,NE]
+
+# Routes de détail lisibles et stables pour les moteurs de recherche.
+RewriteRule ^projets/([^/]+)/?$ pages/projets/detail.php?id=$1 [END,QSA]
+RewriteRule ^experiences/(scolaire|professionnel)/([^/]+)/?$ pages/experiences/detail.php?type=$1&id=$2 [END,QSA]
+RewriteRule ^bts-sio/realisations/([^/]+)/?$ pages/bts-sio/realisations/detail.php?id=$1 [END,QSA]
+RewriteRule ^bts-sio/veilles/([^/]+)/?$ pages/bts-sio/veilles/detail.php?id=$1 [END,QSA]
+
 # Toute URL correspondant à un fichier pages/<route>.php est routée automatiquement.
 RewriteCond %{REQUEST_URI} !^/pages/
 RewriteCond %{REQUEST_FILENAME} !-f

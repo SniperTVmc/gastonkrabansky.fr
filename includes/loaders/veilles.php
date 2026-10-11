@@ -44,7 +44,7 @@ function getVeilleItemById($id)
     return null;
 }
 
-function renderVeilleGridHtml(string $detailLinkBase = '/bts-sio/veilles/detail?id='): string
+function renderVeilleGridHtml(string $detailLinkBase = '/bts-sio/veilles/'): string
 {
     $veilles = getAllVeillesData();
 

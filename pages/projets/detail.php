@@ -42,7 +42,7 @@
     $page_seo_custom = [
             'title' => ($projetItem['title'] ?? 'Projet') . ' — Gaston Krabansky',
             'description' => $projetItem['short_description'] ?? $projetItem['description'] ?? 'Découvrez les détails du projet ' . ($projetItem['title'] ?? ''),
-            'canonical' => 'https://gastonkrabansky.fr/projets/detail?id=' . urlencode($id),
+            'canonical' => 'https://gastonkrabansky.fr/projets/' . rawurlencode($id),
             'og_image' => !empty($projetItem['image']) ? $projetItem['image'] : '/assets/images/profile/logo.webp',
             'og_type' => 'article',
             'schema' => [

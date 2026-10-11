@@ -39,10 +39,7 @@ if (!$item) {
 // -------------------------------------------------------------------
 // 2. CAS VALIDE : Définition dynamique des métadonnées SEO
 // -------------------------------------------------------------------
-$canonicalUrl = 'https://gastonkrabansky.fr/experiences/detail?id=' . urlencode($id);
-if (!empty($type)) {
-    $canonicalUrl .= '&type=' . urlencode($type);
-}
+$canonicalUrl = 'https://gastonkrabansky.fr/experiences/' . rawurlencode($type ?: $item['category']) . '/' . rawurlencode($id);
 
 $page_seo_key = 'experiences';
 $page_seo_custom = [

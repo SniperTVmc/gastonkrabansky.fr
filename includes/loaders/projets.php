@@ -144,7 +144,7 @@ function renderProjetDetailHtml($item): string
     return $html;
 }
 
-function renderProjetsGridHtml(string $detailLinkBase = '/projets/detail?id='): string
+function renderProjetsGridHtml(string $detailLinkBase = '/projets/'): string
 {
     $projets = getAllProjetsData();
 

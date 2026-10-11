@@ -47,7 +47,7 @@
                         Ma passion a commencé très jeune, portée notamment par mon intérêt pour le
                         jeu vidéo Minecraft. J'ai d'abord commencé à créer de petits scripts pour mon propre serveur, avant de
                         développer des plugins en Java que je partage aujourd'hui publiquement, à l'image de mon projet
-                        <a href="/projets/detail?id=essentialsx-gui" target="_blank">EssentialsX GUI</a>, qui cumule plus de 30.000 téléchargements en octobre 2026.<br><br>
+                        <a href="/projets/essentialsx-gui" target="_blank">EssentialsX GUI</a>, qui cumule plus de 30.000 téléchargements en octobre 2026.<br><br>
 
                         En dehors du code, les jeux vidéo et le cinéma constituent mes principaux centres d'intérêt.
                         J'ai un faible pour les œuvres dotées d'un scénario profond et immersif.

@@ -54,7 +54,7 @@ function getReferentielOfficiel(): array
     return [];
 }
 
-function renderRealisationsPageHtml(string $detailLinkBase = '/bts-sio/realisations/detail?id='): string
+function renderRealisationsPageHtml(string $detailLinkBase = '/bts-sio/realisations/'): string
 {
     $realisations = getAllRealisationsData();
 
