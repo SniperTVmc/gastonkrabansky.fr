@@ -96,7 +96,8 @@
                 <h3 style="justify-content:center;"><i class="fas fa-school"></i> Compétences validées dans le cadre du BTS SIO</h3>
                 <p>
                     Pour plus d’informations sur les compétences acquises et validées dans le cadre de mon BTS SIO,
-                    rendez-vous sur la page <a href="/bts-sio">BTS SIO</a> de la section dédiée.
+                    rendez-vous sur la page <a href="/bts-sio">BTS SIO</a> et consultez mes
+                    <a href="/bts-sio/realisations">réalisations présentées pour l’épreuve E5</a>.
                 </p>
             </div>
         </section>

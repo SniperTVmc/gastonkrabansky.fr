@@ -24,7 +24,10 @@
         <!-- Page Header -->
         <div class="page-header">
             <h1>Le <span>BTS SIO</span> - Option SLAM</h1>
-            <p>Une présentation rapide du diplôme, pensée pour un recruteur qui découvre le BTS SIO pour la première fois.</p>
+            <p>Une présentation rapide du diplôme, pensée pour un recruteur qui découvre le BTS SIO pour la première fois.
+                Retrouvez aussi mes <a href="/bts-sio/realisations">réalisations</a> et mes
+                <a href="/bts-sio/veilles">veilles technologiques</a> réalisées dans ce cadre.
+            </p>
         </div>
 
 

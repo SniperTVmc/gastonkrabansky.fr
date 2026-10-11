@@ -25,7 +25,10 @@
         <!-- Page Header -->
         <div class="page-header">
             <h1>Réalisations <span>& Compétences</span></h1>
-            <p>Les différentes compétences par réalisation faite que j'ai pu acquérir au cours de ma formation.</p>
+            <p>Les différentes compétences par réalisation faite que j'ai pu acquérir au cours de ma formation.
+                Ces travaux complètent la <a href="/bts-sio">présentation du BTS SIO</a> et mes
+                <a href="/bts-sio/veilles">veilles technologiques</a>.
+            </p>
         </div>
 
 

@@ -44,6 +44,25 @@ function getProjetItemById($id)
     return null;
 }
 
+function renderProjectSummary(string $summary): string
+{
+    $formatted = preg_replace_callback(
+        '/<a\b([^>]*)>(.*?)<\/a>/is',
+        static function (array $match): string {
+            if (preg_match('/\bhref\s*=\s*([\'"])(\/[^\'"]*)\1/i', $match[1], $hrefMatch)) {
+                return '<a href="' . htmlspecialchars($hrefMatch[2], ENT_QUOTES, 'UTF-8') . '">'
+                    . htmlspecialchars(strip_tags($match[2]), ENT_QUOTES, 'UTF-8')
+                    . '</a>';
+            }
+
+            return htmlspecialchars(strip_tags($match[2]), ENT_QUOTES, 'UTF-8');
+        },
+        $summary
+    );
+
+    return strip_tags($formatted ?? htmlspecialchars($summary, ENT_QUOTES, 'UTF-8'), '<a>');
+}
+
 function renderProjetDetailHtml($item): string
 {
     if (!$item) {
@@ -159,7 +178,7 @@ function renderProjetsGridHtml(string $detailLinkBase = '/projets/'): string
             $title = htmlspecialchars($projet['title'] ?? '', ENT_QUOTES, 'UTF-8');
             $image = htmlspecialchars($projet['image'] ?? '', ENT_QUOTES, 'UTF-8');
             $imageAlt = htmlspecialchars($projet['image_alt'] ?? '', ENT_QUOTES, 'UTF-8');
-            $summary = htmlspecialchars($projet['summary'] ?? '', ENT_QUOTES, 'UTF-8');
+            $summary = renderProjectSummary($projet['summary'] ?? '');
 
             $date = '';
             if (!empty($projet['stat_tags']) && is_array($projet['stat_tags'])) {

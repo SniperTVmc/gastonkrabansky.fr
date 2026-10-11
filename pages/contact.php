@@ -27,6 +27,7 @@
             <p>
                 Vous avez un projet, une question ou une suggestion ?
                 N’hésitez pas à me contacter via le formulaire ci-dessous ou via un des liens de contact alternatifs.
+                Vous pouvez consulter mes <a href="/projets">projets</a> et mes <a href="/competences">compétences</a> avant de me contacter.
             </p>
         </div>
 

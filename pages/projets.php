@@ -28,6 +28,7 @@
             <p>
                 Découvrez mes différents projets réalisés dans un cadre professionnel ou personnel.
                 Chaque projet est accompagné d'une description détaillée, des technologies utilisées et des liens vers les dépôts ou les démonstrations en ligne.
+                Pour replacer ces réalisations dans mon parcours, consultez également mes <a href="/competences">compétences techniques</a> et mes <a href="/experiences">expériences</a>.
             </p>
         </div>
 

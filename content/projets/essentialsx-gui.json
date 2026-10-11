@@ -27,7 +27,7 @@
     {
       "type": "text",
       "title": "Ce que ce projet m'a apporté",
-      "description": "Ce plugin m'a permis d'approfondir mes compétences en Java, notamment sur la manipulation de l'API Spigot, la gestion d'événements, et la persistance de données via SQL. C'est aussi mon premier projet publié et maintenu publiquement, avec un vrai retour d'utilisateurs, ce qui m'a permis de comprendre l'importance de la maintenance et du support pour un projet open-source"
+      "description": "Ce plugin m'a permis d'approfondir mes <a href='/competences'>compétences en Java</a>, notamment sur la manipulation de l'API Spigot, la gestion d'événements, et la persistance de données via SQL. C'est aussi mon premier projet publié et maintenu publiquement, avec un vrai retour d'utilisateurs, ce qui m'a permis de comprendre l'importance de la maintenance et du support pour un projet open-source."
     },
     {
       "type": "text",

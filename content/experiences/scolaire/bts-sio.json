@@ -32,7 +32,7 @@
     {
       "type": "text",
       "title": "Ce que cette formation m'a apporté",
-      "description": "Cette formation représente une part importante de mon site : j'y ai consacré une section entière, dédiée à la présentation du diplôme, aux compétences acquises grâce à mes réalisations, et à mes veilles technologiques."
+      "description": "Cette formation représente une part importante de mon site : j'y ai consacré une section entière, dédiée à la <a href='/bts-sio'>présentation du diplôme</a>, aux compétences acquises grâce à mes <a href='/bts-sio/realisations'>réalisations</a>, et à mes <a href='/bts-sio/veilles'>veilles technologiques</a>."
     },
     {
       "type": "block",

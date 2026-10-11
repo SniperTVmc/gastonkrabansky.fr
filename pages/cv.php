@@ -24,7 +24,10 @@
         <!-- Page Header -->
         <div class="page-header">
             <h1>Mon <span>CV</span></h1>
-            <p>Consultez mon curriculum vitae directement ci-dessous, ou téléchargez-le au format PDF.</p>
+            <p>Consultez mon curriculum vitae directement ci-dessous, ou téléchargez-le au format PDF.
+                Pour découvrir les détails, retrouvez également mes <a href="/competences">compétences</a>, mes
+                <a href="/experiences">expériences</a> et mes <a href="/projets">projets</a>.
+            </p>
         </div>
 
 

@@ -25,7 +25,10 @@
         <!-- Page Header -->
         <div class="page-header">
             <h1>Veilles <span>technologiques</span></h1>
-            <p>Les veilles technologiques que j'ai réalisées au cours de ma formation.</p>
+            <p>Les veilles technologiques que j'ai réalisées au cours de ma formation.
+                Elles complètent la <a href="/bts-sio">présentation du BTS SIO</a> et mes
+                <a href="/bts-sio/realisations">réalisations</a>.
+            </p>
         </div>
 
 

@@ -27,7 +27,8 @@
             <h1>Mes <span>Expériences</span></h1>
             <p>
                 Découvrez mon parcours scolaire, ainsi que mes expériences professionnelles,
-                qui m'ont permis de développer mes compétences et d'acquérir de nouvelles connaissances.
+                qui m'ont permis de développer mes <a href="/competences">compétences</a> et d'acquérir de nouvelles connaissances.
+                Vous pouvez aussi consulter mon <a href="/cv">CV</a> pour une synthèse de mon parcours.
             </p>
         </div>
 

@@ -6,7 +6,7 @@
   "image_alt": "Aperçu du portfolio de Gaston Krabansky",
   "tech_tags": ["PHP", "HTML", "CSS", "JavaScript", "JSON"],
   "stat_tags": ["2025 - 2026"],
-  "summary": "Mon portfolio personnel, conçu pour présenter mon profil, mes compétences et mes projets à des recruteurs, ainsi que pour servir de support pour l'épreuve E5 du BTS SIO, option SLAM.",
+  "summary": "Mon portfolio personnel, conçu pour présenter mon profil, mes <a href='/competences'>compétences</a> et mes <a href='/projets'>projets</a> à des recruteurs, ainsi que pour servir de support pour l'épreuve E5 du <a href='/bts-sio'>BTS SIO</a>, option SLAM.",
   "sections": [
     {
       "type": "text",
@@ -35,7 +35,7 @@
     {
       "type": "text",
       "title": "Hébergement et optimisation",
-      "description": "Le site est hébergé sur un serveur mutualisé, avec un certificat SSL pour sécuriser les échanges. Il est également optimisé pour le référencement naturel (SEO) et l'accessibilité, avec des balises sémantiques, des attributs alt pour les images et une structure de navigation claire."
+      "description": "Le site est hébergé sur un serveur mutualisé, avec un certificat SSL pour sécuriser les échanges. Il est également optimisé pour le référencement naturel (SEO) et l'accessibilité, avec des balises sémantiques, des attributs alt pour les images et une structure de navigation claire. Retrouvez également mon <a href='/cv'>CV</a> et mon <a href='/contact'>formulaire de contact</a>."
     }
   ],
   "links": [
