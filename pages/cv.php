@@ -35,7 +35,10 @@
         <section class="container">
             <div class="cv-wrapper">
                 <div class="cv-preview">
-                    <iframe src="/assets/documents/cv/cv.pdf" title="Aperçu du CV de Gaston Krabansky"></iframe>
+                    <iframe
+                            src="https://docs.google.com/viewer?url=https://www.gastonkrabansky.fr/assets/documents/cv/cv.pdf&embedded=true"
+                            title="Aperçu du CV de Gaston Krabansky">
+                    </iframe>
                 </div>
                 <aside class="cv-side">
                     <h3>Télécharger</h3>
