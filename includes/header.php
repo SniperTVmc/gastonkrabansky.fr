@@ -17,6 +17,8 @@
     <meta name="description" content="<?php echo htmlspecialchars($seo['description'], ENT_QUOTES, 'UTF-8'); ?>">
     <meta name="author" content="Gaston Krabansky">
     <meta name="robots" content="<?php echo htmlspecialchars($seo['robots'], ENT_QUOTES, 'UTF-8'); ?>">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#df9b67">
     <link rel="canonical" href="<?php echo htmlspecialchars($seo['canonical'], ENT_QUOTES, 'UTF-8'); ?>">
 
     <!-- DNS Prefetch & Preconnect -->

@@ -27,6 +27,8 @@
 
     --nav-height: 80px;
     --max-width: 1200px;
+
+    color-scheme: dark;
 }
 
 /* --- RESET & BASE --- */
