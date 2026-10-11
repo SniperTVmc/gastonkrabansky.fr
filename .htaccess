@@ -1,6 +1,6 @@
 RewriteEngine On
 
-# Réduire l'exposition des fichiers techniques et désactiver les listings.
+# Minimize the visibility of technical files and disable listings.
 <IfModule mod_autoindex.c>
     Options -Indexes
 </IfModule>
@@ -8,17 +8,18 @@ RewriteRule (^|/)(?:\.git(?:/|$)|\.idea(?:/|$)|includes(?:/|$)) - [F,L,NC]
 RewriteRule (^|/)\.(?!well-known(?:/|$)) - [F,L,NC]
 RewriteRule \.(?:bak|conf|dist|ini|log|old|orig|save|sh|sql|swp|yml|yaml)$ - [F,L,NC]
 
-# En-têtes de sécurité HTTP.
+# HTTP security headers.
 <IfModule mod_headers.c>
-    Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; script-src 'self' https://cdnjs.cloudflare.com https://web3forms.com https://hcaptcha.com https://*.hcaptcha.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com data:; img-src 'self' data: https://avatars.githubusercontent.com; connect-src 'self' https://api.web3forms.com https://hcaptcha.com https://*.hcaptcha.com; frame-src 'self' https://hcaptcha.com https://*.hcaptcha.com; form-action https://api.web3forms.com; upgrade-insecure-requests"
+    Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; script-src 'self' https://cdnjs.cloudflare.com https://web3forms.com https://hcaptcha.com https://*.hcaptcha.com https://js.hcaptcha.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com data:; img-src 'self' data: https://avatars.githubusercontent.com https://*.hcaptcha.com; connect-src 'self' https://api.web3forms.com https://hcaptcha.com https://*.hcaptcha.com https://api.hcaptcha.com; frame-src 'self' https://hcaptcha.com https://*.hcaptcha.com; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests"
     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
     Header always set X-Content-Type-Options "nosniff"
     Header always set X-Frame-Options "SAMEORIGIN"
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    Header always set X-Permitted-Cross-Domain-Policies "none"
 </IfModule>
 
-# Compatibilité avec les anciennes URLs publiques.
+# Backward compatibility with old public URLs.
 RewriteCond %{THE_REQUEST} \s/+pages/accueil\.php(?:[?\s])
 RewriteRule ^pages/accueil\.php$ / [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+pages/bts-sio/presentation\.php(?:[?\s])
@@ -26,11 +27,11 @@ RewriteRule ^pages/bts-sio/presentation\.php$ /bts-sio [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+pages/([^.]+)\.php(?:[?\s])
 RewriteRule ^pages/(.+)\.php$ /$1 [R=301,L,NE]
 
-# La page d'accueil et la seule route dont le nom diffère du fichier cible.
+# The home page is the only path whose name differs from the target file.
 RewriteRule ^$ pages/accueil.php [END]
 RewriteRule ^bts-sio/?$ pages/bts-sio/presentation.php [END]
 
-# Rediriger les anciennes URLs de détail vers leurs versions lisibles.
+# Redirect the old product detail URLs to their human-readable versions.
 RewriteCond %{THE_REQUEST} \s/+projets/detail\?id=([^&\s]+) [NC]
 RewriteRule ^projets/detail$ /projets/%1? [R=301,L,NE]
 RewriteCond %{THE_REQUEST} \s/+experiences/detail\?id=([^&\s]+)&type=(scolaire|professionnel) [NC]
@@ -40,13 +41,17 @@ RewriteRule ^bts-sio/realisations/detail$ /bts-sio/realisations/%1? [R=301,L,NE]
 RewriteCond %{THE_REQUEST} \s/+bts-sio/veilles/detail\?id=([^&\s]+) [NC]
 RewriteRule ^bts-sio/veilles/detail$ /bts-sio/veilles/%1? [R=301,L,NE]
 
-# Routes de détail lisibles et stables pour les moteurs de recherche.
+# Block direct access to internal scripts after legacy redirects.
+RewriteCond %{THE_REQUEST} \s/+pages(?:/|[?\s]) [NC]
+RewriteRule ^pages(?:/|$) - [F,L,NC]
+
+# Clear and stable URL paths for search engines.
 RewriteRule ^projets/([^/]+)/?$ pages/projets/detail.php?id=$1 [END,QSA]
 RewriteRule ^experiences/(scolaire|professionnel)/([^/]+)/?$ pages/experiences/detail.php?type=$1&id=$2 [END,QSA]
 RewriteRule ^bts-sio/realisations/([^/]+)/?$ pages/bts-sio/realisations/detail.php?id=$1 [END,QSA]
 RewriteRule ^bts-sio/veilles/([^/]+)/?$ pages/bts-sio/veilles/detail.php?id=$1 [END,QSA]
 
-# Toute URL correspondant à un fichier pages/<route>.php est routée automatiquement.
+# Any URL that corresponds to a file named pages/<route>.php is automatically routed.
 RewriteCond %{REQUEST_URI} !^/pages/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
