@@ -1,0 +1,38 @@
+{
+  "id": "bac",
+  "category": "scolaire",
+  "rank": 2,
+  "title": "Baccalauréat Général - Spécialités NSI & Maths",
+  "meta": {
+    "period": "Septembre 2022 - Juillet 2025",
+    "location": "Lycée Marguerite de Flandre, Gondecourt"
+  },
+  "summary": "Obtention du Baccalauréat Général avec les spécialités NSI et Mathématiques, ainsi qu'une Section Européenne Anglais.",
+  "sections": [
+    {
+      "type": "text",
+      "title": "Un nouvel environnement d'apprentissage",
+      "description": "En classe de Seconde, je me suis initié au développement web en découvrant HTML, CSS et JavaScript. N'ayant aucune expérience préalable dans ce domaine, j'ai rapidement assimilé ces langages. Cette expérience m'a permis de réaliser ma capacité à m'adapter facilement à de nouvelles syntaxe et à de nouvelles méthodes de programmation, tout en renforçant ma motivation constante d'aller plus loin dans mon apprentissage."
+    },
+    {
+      "type": "text",
+      "title": "Choix des spécialités et orientation professionnelle",
+      "description": "En classe de Première, j'ai choisi les spécialités NSI (Numérique et Sciences Informatiques), Mathématiques et Physique-Chimie, en accord avec mon profil scientifique. La NSI a constitué mon premier véritable contact structuré avec l'algorithmique et la programmation, notamment à travers l'apprentissage de Python, ce qui a confirmé ma volonté d'orienter mon avenir professionnel vers ce domaine."
+    },
+    {
+      "type": "text",
+      "title": "Consolidation des connaissances et préparation aux études supérieures",
+      "description": "La Physique-Chimie correspondant moins à mes centres d'intérêt, j'ai décidé de ne pas la conserver en Terminale afin de me concentrer sur les Mathématiques et la NSI. Ces deux années d'enseignement spécialisé m'ont permis de consolider l'ensemble des connaissances acquises en autonomie, m'offrant ainsi un socle solide pour mes études."
+    },
+    {
+      "type": "text",
+      "title": "Perfectionnement en programmation et compétences techniques",
+      "description": "Parallèlement, durant mes trois années de lycée, je me suis perfectionné en programmation en découvrant le langage Java dès la Seconde. La maîtrise précoce de ce langage, associée à des notions en programmation orientée objet (POO), SQL, YAML et JSON, m'a procuré une réelle avance technique."
+    },
+    {
+      "type": "text",
+      "title": "Projet personnel et développement de compétences",
+      "description": "Bien que le manque de temps en fin de lycée ne m'ait pas permis de concrétiser pleinement la création de mon serveur Minecraft, la réalisation de ce projet personnel m'aura permis de développer des compétences pratiques précieuses pour mon parcours académique et professionnel."
+    }
+  ]
+}

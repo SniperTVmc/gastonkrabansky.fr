@@ -1,0 +1,28 @@
+{
+  "id": "brevet",
+  "category": "scolaire",
+  "rank": 1,
+  "title": "Brevet des Collèges",
+  "meta": {
+    "period": "Septembre 2018 - Juillet 2022",
+    "location": "Collège Hergé, Gondecourt"
+  },
+  "summary": "Obtention du Diplôme National du Brevet au collège Hergé à Gondecourt.",
+  "sections": [
+    {
+      "type": "text",
+      "title": "Mes débuts en informatique",
+      "description": "C'est au collège que j'ai développé un réel intérêt pour l'informatique et la programmation. Durant mon temps libre, je concevais de petits jeux sur Scratch, ce qui m'a permis de me familiariser avec la logique algorithmique."
+    },
+    {
+      "type": "text",
+      "title": "Premières expériences en programmation",
+      "description": "Impliqué et passionné, j'ai participé au concours Castor Informatique, remportant la première place de mon établissement deux années consécutives. Vers la fin du collège, j'ai franchi une nouvelle étape en créant des scripts à l'aide du plugin Skript sur Minecraft. J'ai ainsi abandonné les blocs visuels pour me tourner vers de véritables lignes de code."
+    },
+    {
+      "type": "text",
+      "title": "Du temps libre bien investi",
+      "description": "Durant ces quatre années, en y consacrant l'ensemble de mon temps libre après les cours ainsi que les périodes de confinement, j'ai développé de nombreuses compétences en autonomie. Je me suis notamment auto-formé à la mise en place et à la gestion de serveurs Minecraft sous Linux, en manipulant des outils essentiels comme MySQL, MariaDB, phpMyAdmin et le panel d'hébergement Pterodactyl."
+    }
+  ]
+}

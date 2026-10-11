@@ -1,0 +1,30 @@
+{
+  "id": "stage-france-3",
+  "category": "professionnel",
+  "rank": 1,
+  "title": "Administrateur informatique - France 3 (Stage d'observation)",
+  "meta": {
+    "period": "Décembre 2021",
+    "location": "France Télévisions - France 3"
+  },
+  "summary": "Stage d'observation de trois jours au sein de la chaîne de télévision France 3, dans le service administration réseau.",
+  "sections": [
+    {
+      "type": "list",
+      "title": "Ce que j'ai découvert",
+      "description": "Durant ce stage, j'ai pu découvrir plusieurs aspects du métier d'administrateur réseau et de la diffusion télévisuelle.",
+      "elements": [
+        "Le fonctionnement des infrastructures réseau d'une chaîne de télévision",
+        "Les systèmes de diffusion et leurs contraintes de fiabilité",
+        "Le métier d'administrateur réseau au quotidien",
+        "Une première initiation au langage Python, avec la création de scripts simples"
+      ]
+    },
+    {
+      "type": "document",
+      "title": "<i class='fas fa-file-pdf'></i> Rapport de stage",
+      "description": "Un rapport de stage détaillé peut être ajouté ici en complément.",
+      "path": "/assets/documents/rapports/rapport-france-3.pdf"
+    }
+  ]
+}

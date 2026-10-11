@@ -1,0 +1,52 @@
+{
+  "id": "essentialsx-gui",
+  "rank": 3,
+  "title": "EssentialsX-GUI",
+  "image": "../../assets/images/projects/essentialsx-gui.webp",
+  "image_alt": "Aperçu du plugin EssentialsX-GUI",
+  "tech_tags": ["Java", "SQL", "Gradle", "Spigot API"],
+  "stat_tags": ["Open Source", "2025 - 2026", "+32 000 téléchargements", "~550 serveurs en moyenne", "~700 joueurs en moyenne"],
+  "summary": "EssentialsX-GUI est un plugin Minecraft (serveurs Spigot/Paper) qui offre des interfaces graphiques conviviales pour gérer les fonctionnalités du plugin EssentialsX.",
+  "sections": [
+    {
+      "type": "text",
+      "title": "Le contexte",
+      "description": "En gérant mon propre serveur Minecraft, j'ai rapidement constaté que la configuration d'EssentialsX passait uniquement par des commandes en ligne ou des fichiers de configuration, ce qui peut être fastidieux pour les administrateurs peu à l'aise avec ce type d'outils. J'ai donc développé ce plugin pour proposer une alternative visuelle, directement dans le jeu."
+    },
+    {
+      "type": "list",
+      "title": "Fonctionnalités clés",
+      "elements": [
+        "Gestion des homes, des kits, ou encore des warps via des interfaces graphiques intuitives.",
+        "Support du système de vente d'items et de gestion d'économie d'EssentialsX.",
+        "Présentation visuelle de la commande /whois.",
+        "Large compatibilité avec les versions récentes de Minecraft et d'EssentialsX.",
+        "Mises à jour régulières pour suivre les évolutions d'EssentialsX, corriger les bugs signalés par la communauté, et ajouter de nouvelles fonctionnalités."
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Ce que ce projet m'a apporté",
+      "description": "Ce plugin m'a permis d'approfondir mes compétences en Java, notamment sur la manipulation de l'API Spigot, la gestion d'événements, et la persistance de données via SQL. C'est aussi mon premier projet publié et maintenu publiquement, avec un vrai retour d'utilisateurs, ce qui m'a permis de comprendre l'importance de la maintenance et du support pour un projet open-source"
+    },
+    {
+      "type": "text",
+      "title": "Aujourd'hui",
+      "description": "Le plugin a dépassé les 32.000 téléchargements et est utilisé sur plus de 500 serveurs Minecraft pour un total de 700 joueurs en moyenne. Il continue d'être activement développé et maintenu, avec des mises à jour régulières pour suivre les évolutions d'EssentialsX et répondre aux besoins de la communauté."
+    }
+  ],
+  "links": [
+    {
+      "url": "https://sniper-tvmc.gitbook.io/essentialsx-gui/",
+      "label": "Documentation <i class='fas fa-book'></i>",
+      "class": "btn btn-fill",
+      "external": true
+    },
+    {
+      "url": "https://github.com/SniperTVmc/EssentialsX-GUI",
+      "label": "Code source <i class='fab fa-github'></i>",
+      "class": "btn btn-outline",
+      "external": true
+    }
+  ]
+}

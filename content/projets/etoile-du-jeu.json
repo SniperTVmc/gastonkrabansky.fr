@@ -1,0 +1,38 @@
+{
+  "id": "etoile-du-jeu",
+  "rank": 2,
+  "title": "L'Étoile du jeu - Association",
+  "image": "../../assets/images/projects/etoile-du-jeu.webp",
+  "image_alt": "Aperçu du site de l'association L'Étoile du jeu",
+  "tech_tags": ["PHP", "HTML", "CSS", "JavaScript", "MySQL"],
+  "stat_tags": ["2026"],
+  "summary": "Site web de l'association \"L'Étoile du jeu\", une association de jeux de société basée à Lille. Le site a été développé en PHP, HTML, CSS et MySQL.",
+  "sections": [
+    {
+      "type": "text",
+      "description": "Ce projet a été réalisé dans le cadre d'un projet scolaire, en collaboration avec un autre étudiant, dont l'objectif était d'améliorer le site web existant de l'association en ajoutant de nouvelles fonctionnalités et en améliorant le design."
+    },
+    {
+      "type": "list",
+      "title": "Mon rôle dans le projet",
+      "elements": [
+        "Développement de fonctionnalités backend en PHP (connexion à la base de données MySQL, gestion des utilisateurs, etc.)",
+        "Mise en place et sécurisation d'un espace membre",
+        "Travail en équipe avec gestion de version via Git"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Compétences BTS SIO mobilisées",
+      "description": "Ce projet fait partie de mes réalisations présentées pour l'épreuve E5 du BTS SIO. Retrouvez le détail des compétences validées grâce à ce projet sur la page <a href='/bts-sio/realisations/detail?id=etoile-du-jeu'>Compétences BTS SIO</a>."
+    }
+  ],
+  "links": [
+    {
+      "url": "#",
+      "label": "Site non disponible",
+      "class": "btn btn-fill",
+      "disabled": true
+    }
+  ]
+}

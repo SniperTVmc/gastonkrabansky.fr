@@ -1,0 +1,45 @@
+{
+  "id": "veille-sdd-ia",
+  "rank": 1,
+  "title": "Le développement piloté par les spécifications (Spec-Driven Development ou SDD) avec l'IA",
+  "meta": {
+    "period": "Mars 2026"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "description": "Aujourd'hui, au lieu de demander directement à l'IA d'écrire du code ligne par ligne (ce qui donne souvent des erreurs), on commence par rédiger des règles et des descriptions très précises de ce que l'on veut obtenir : c'est le Spec-Driven Development. L'IA utilise ensuite ce plan détaillé pour générer le code correct du premier coup. Cette veille s'intéresse aux nouveaux outils de cette méthode, notamment OpenSpec (simple et rapide) et BMAD (plus robuste pour les projets complexes), qui changent complètement la façon de programmer."
+    },
+    {
+      "type": "list",
+      "title": "Objectifs",
+      "elements": [
+        "Comprendre comment le fait de donner de bonnes consignes de départ à l'IA évite qu'elle ne fasse n'importe quoi.",
+        "Comparer les différents outils du marché (comme OpenSpec et BMAD) pour savoir lesquels sont les plus efficaces.",
+        "Voir comment ce métier évolue : le développeur passe moins de temps à coder et devient plutôt un vérificateur et un 'chef d'orchestre'."
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Méthode",
+      "description": "Consultation des pages officielles des projets sur GitHub, de blogs tech spécialisés et de retours d'expérience de développeurs sur des forums (comme Reddit ou Medium), avec une vérification par semaine pour suivre les nouveautés et les nouvelles astuces."
+    },
+    {
+      "type": "list",
+      "title": "Articles et analyses",
+      "elements": [
+        "« [I Tested Three Spec-Driven AI Tools. Here’s My Honest Take.](https://ranthebuilder.cloud/blog/i-tested-three-spec-driven-ai-tools-here-s-my-honest-take/) » (Ran The Builder) : Cet article compare concrètement OpenSpec et BMAD dans des situations réelles et fournit de vrais chiffres sur le temps gagné et les coûts.",
+        "« [Spec-driven development with AI: Get started with a new open source toolkit](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/) » (GitHub Blog) : Cet article explique le grand changement en cours, où la clarté des instructions de départ prime sur l'écriture du code."
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Sources consultées",
+      "elements": [
+        "[GitHub Blog — Spec-driven development with AI](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/)",
+        "[Ran The Builder — I Tested Three Spec-Driven AI Tools](https://ranthebuilder.cloud/blog/i-tested-three-spec-driven-ai-tools-here-s-my-honest-take/)",
+        "Retours d'expérience (Reddit, Medium)"
+      ]
+    }
+  ]
+}

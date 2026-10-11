@@ -1,0 +1,55 @@
+{
+  "id": "portfolio",
+  "rank": 1,
+  "title": "Portfolio / Site web personnel",
+  "image": "../../assets/images/projects/portfolio.webp",
+  "image_alt": "Aperçu du portfolio de Gaston Krabansky",
+  "tech_tags": ["PHP", "HTML", "CSS", "JavaScript", "JSON"],
+  "stat_tags": ["2025 - 2026"],
+  "summary": "Mon portfolio personnel, conçu pour présenter mon profil, mes compétences et mes projets à des recruteurs, ainsi que pour servir de support pour l'épreuve E5 du BTS SIO, option SLAM.",
+  "sections": [
+    {
+      "type": "text",
+      "description": "Ayant peu d'expérience avec le front-end, et n'étant pas un web designer qualifié, ce site a été conçu avec l'aide d'IA génératives, puis affiné et personnalisé par mes soins."
+    },
+    {
+      "type": "text",
+      "description": "Ce site était initialement prévu pour être un site statique simple, mais j'ai décidé de l'optimiser en utilisant PHP, ce qui me permet de créer des pages dynamiques et de gérer les contenus de manière plus efficace, tout en restant simple à héberger et à faire évoluer."
+    },
+    {
+      "type": "list",
+      "title": "Objectifs du site",
+      "elements": [
+        "Présenter mon profil, mes compétences, mon parcours et mes projets à des recruteurs",
+        "Servir de support pour le portfolio de l'épreuve E5 du BTS SIO, option SLAM",
+        "Permettre une mise à jour facile et rapide des contenus, notamment des projets et des compétences",
+        "Être optimisé pour le référencement naturel (SEO) et l'accessibilité",
+        "Être responsive et s'adapter à tous les types d'écrans (ordinateurs, tablettes, smartphones)"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Architecture technique",
+      "description": "Le site est construit avec une architecture MVC (Modèle-Vue-Contrôleur) simplifiée, avec un controller qui gère les différentes pages et les contenus dynamiques. Les contenus sont stockés dans des fichiers JSON, ce qui permet de les modifier facilement sans avoir à toucher au code PHP."
+    },
+    {
+      "type": "text",
+      "title": "Hébergement et optimisation",
+      "description": "Le site est hébergé sur un serveur mutualisé, avec un certificat SSL pour sécuriser les échanges. Il est également optimisé pour le référencement naturel (SEO) et l'accessibilité, avec des balises sémantiques, des attributs alt pour les images et une structure de navigation claire."
+    }
+  ],
+  "links": [
+    {
+      "url": "https://gastonkrabansky.fr",
+      "label": "Voir le site <i class='fas fa-up-right-from-square'></i>",
+      "class": "btn btn-fill",
+      "external": true
+    },
+    {
+      "url": "https://github.com/SniperTVmc/gastonkrabansky.fr",
+      "label": "Code source <i class='fab fa-github'></i>",
+      "class": "btn btn-outline",
+      "external": true
+    }
+  ]
+}

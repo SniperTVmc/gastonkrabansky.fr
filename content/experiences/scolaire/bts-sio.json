@@ -1,0 +1,49 @@
+{
+  "id": "bts-sio",
+  "category": "scolaire",
+  "rank": 3,
+  "title": "BTS SIO - Option SLAM",
+  "meta": {
+    "period": "Septembre 2025 - Présent",
+    "location": "Lycée Gaston Berger, Lille"
+  },
+  "summary": "Préparation du BTS Services Informatiques aux Organisations (SIO), option Solutions Logicielles et Applications Métiers (SLAM).",
+  "sections": [
+    {
+      "type": "text",
+      "title": "Présentation de la formation",
+      "description": "Je prépare actuellement un BTS Services Informatiques aux Organisations (SIO), option Solutions Logicielles et Applications Métiers (SLAM), au lycée Gaston Berger à Lille. Cette formation en deux ans forme aux métiers du développement d'applications et de la gestion de projets informatiques."
+    },
+    {
+      "type": "text",
+      "title": "Objectifs et compétences visées",
+      "description": "Cette formation s'inscrit dans la continuité de mon parcours en me permettant de consolider le socle technique développé en autonomie, notamment en programmation orientée objet. Elle m'apporte également de nouvelles compétences concrètes, telles que le développement en PHP."
+    },
+    {
+      "type": "list",
+      "title": "Compétences développées",
+      "description": "De plus, les projets scolaires me permettent de mettre en pratique l'ensemble du cycle de vie d'un projet informatique :",
+      "elements": [
+          "Conception et modélisation : élaboration du Modèle Conceptuel des Données (MCD), réalisation des diagrammes de cas d'utilisation et création des maquettes IHM.",
+          "Développement et architecture : choix des technologies adaptées et rédaction d'un code propre.",
+          "Gestion et collaboration : gestion des versions (versioning avec Git) et travail en équipe pour mener à bien la création complète d'applications web."
+        ]
+    },
+    {
+      "type": "text",
+      "title": "Ce que cette formation m'a apporté",
+      "description": "Cette formation représente une part importante de mon site : j'y ai consacré une section entière, dédiée à la présentation du diplôme, aux compétences acquises grâce à mes réalisations, et à mes veilles technologiques."
+    },
+    {
+      "type": "block",
+      "block": {
+        "title": "<i class='fas fa-school'></i> Section BTS SIO",
+        "description": "Découvrez la section complète dédiée au BTS SIO, avec la présentation du diplôme, les compétences validées par réalisation, et mes veilles technologiques.",
+        "link": {
+          "url": "/bts-sio",
+          "label": "Accéder à la section BTS SIO <i class='fas fa-arrow-right'></i>"
+        }
+      }
+    }
+  ]
+}

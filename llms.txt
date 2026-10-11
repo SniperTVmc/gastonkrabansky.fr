@@ -1,0 +1,33 @@
+# Gaston Krabansky — Portfolio
+
+> Portfolio professionnel et personnel de Gaston Krabansky, développeur Java junior spécialisé en développement backend / logiciel et administration système, étudiant en BTS SIO option SLAM, basé à Lille, France.
+
+## Profil et Compétences
+- Nom : Gaston Krabansky
+- Rôle : Développeur backend / logiciel, développeur Java et administrateur système Linux
+- Formation : BTS SIO option SLAM (Solutions Logicielles et Applications Métiers)
+- Localisation : Lille, Hauts-de-France
+- Technologies principales : Java, Python, PHP, SQL, HTML5, CSS3, JavaScript, Linux, Docker et plugins Minecraft
+- Environnements et outils : Git, GitHub, Maven, Gradle, Apache2, MariaDB, MySQL, Cloudflare et JetBrains
+- Architecture du site : PHP natif, fichiers JSON, sans framework ni base de données
+
+## Projets principaux
+- EssentialsX GUI : plugin Minecraft open source en Java, accompagné d'une documentation dédiée
+- L'Étoile du Jeu : projet web réalisé dans le cadre du BTS SIO
+- Portfolio : site personnel présentant le profil, les compétences, les expériences et les projets de Gaston Krabansky
+
+## Pages Officielles
+- Accueil : https://gastonkrabansky.fr/
+- Compétences : https://gastonkrabansky.fr/competences
+- Expériences : https://gastonkrabansky.fr/experiences
+- Projets & Open Source : https://gastonkrabansky.fr/projets
+- CV : https://gastonkrabansky.fr/cv
+- Contact : https://gastonkrabansky.fr/contact
+- BTS SIO - Présentation : https://gastonkrabansky.fr/bts-sio
+- BTS SIO - Réalisations : https://gastonkrabansky.fr/bts-sio/realisations
+- Veilles Technologiques : https://gastonkrabansky.fr/bts-sio/veilles
+
+## Profils Externes
+- GitHub : https://github.com/SniperTVmc/
+- LinkedIn : https://www.linkedin.com/in/gaston-krabansky/
+- Documentation EssentialsX-GUI : https://sniper-tvmc.gitbook.io/essentialsx-gui/

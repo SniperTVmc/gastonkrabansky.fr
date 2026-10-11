@@ -1,0 +1,14 @@
+/* TEAM */
+  Développeur & Propriétaire : Gaston Krabansky
+  Statut : Étudiant en BTS SIO option SLAM & Développeur Java Junior
+  Spécialités : Développement backend / logiciel et administration système
+  Localisation : Lille, Hauts-de-France, France
+  Site web : https://gastonkrabansky.fr
+  GitHub : https://github.com/SniperTVmc/
+  LinkedIn : https://www.linkedin.com/in/gaston-krabansky/
+
+/* SITE */
+  Standards : HTML5, CSS3, JavaScript, PHP Natif
+  Technologies : Java, Python, PHP, SQL, Linux, Docker
+  Hébergement : France
+  Données : Fichiers JSON, aucune base de données

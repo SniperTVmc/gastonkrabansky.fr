@@ -1,0 +1,40 @@
+RewriteEngine On
+
+# Réduire l'exposition des fichiers techniques et désactiver les listings.
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+RewriteRule (^|/)(?:\.git(?:/|$)|\.idea(?:/|$)|includes(?:/|$)) - [F,L,NC]
+RewriteRule (^|/)\.(?!well-known(?:/|$)) - [F,L,NC]
+RewriteRule \.(?:bak|conf|dist|ini|log|old|orig|save|sh|sql|swp|yml|yaml)$ - [F,L,NC]
+
+# En-têtes de sécurité HTTP.
+<IfModule mod_headers.c>
+    Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; script-src 'self' https://cdnjs.cloudflare.com https://web3forms.com https://hcaptcha.com https://*.hcaptcha.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com data:; img-src 'self' data: https://avatars.githubusercontent.com; connect-src 'self' https://api.web3forms.com https://hcaptcha.com https://*.hcaptcha.com; frame-src 'self' https://hcaptcha.com https://*.hcaptcha.com; form-action https://api.web3forms.com; upgrade-insecure-requests"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+# Compatibilité avec les anciennes URLs publiques.
+RewriteCond %{THE_REQUEST} \s/+pages/accueil\.php(?:[?\s])
+RewriteRule ^pages/accueil\.php$ / [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+pages/bts-sio/presentation\.php(?:[?\s])
+RewriteRule ^pages/bts-sio/presentation\.php$ /bts-sio [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+pages/([^.]+)\.php(?:[?\s])
+RewriteRule ^pages/(.+)\.php$ /$1 [R=301,L,NE]
+
+# La page d'accueil et la seule route dont le nom diffère du fichier cible.
+RewriteRule ^$ pages/accueil.php [END]
+RewriteRule ^bts-sio/?$ pages/bts-sio/presentation.php [END]
+
+# Toute URL correspondant à un fichier pages/<route>.php est routée automatiquement.
+RewriteCond %{REQUEST_URI} !^/pages/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/pages/$1.php -f
+RewriteRule ^(.+?)/?$ pages/$1.php [END]
+
+ErrorDocument 404 /pages/404.php

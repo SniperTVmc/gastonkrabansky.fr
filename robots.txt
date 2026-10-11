@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /includes/
+Disallow: /content/
+Disallow: /data/
+Disallow: /pages/
+
+Sitemap: https://gastonkrabansky.fr/sitemap.xml
