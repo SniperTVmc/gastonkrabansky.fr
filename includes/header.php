@@ -7,6 +7,10 @@
     $page_custom = $page_seo_custom ?? [];
     $seo = get_seo_data($current_page_key, $page_custom);
     $escape = static fn ($value): string => htmlspecialchars((string) $value, ENT_QUOTES, 'UTF-8');
+    $asset_version = static function (string $path): string {
+        $file = __DIR__ . '/..' . $path;
+        return is_file($file) ? '?v=' . filemtime($file) : '';
+    };
 ?>
 <head>
 
@@ -55,9 +59,9 @@
     <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/components.css">
-    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/style.css<?= $asset_version('/assets/css/style.css') ?>">
+    <link rel="stylesheet" href="/assets/css/components.css<?= $asset_version('/assets/css/components.css') ?>">
+    <link rel="stylesheet" href="/assets/css/responsive.css<?= $asset_version('/assets/css/responsive.css') ?>">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -74,8 +78,8 @@
     <?php endif; ?>
 
     <!-- Scripts -->
-    <script src="/assets/js/main.js" defer></script>
-    <script src="/assets/js/navigation.js" defer></script>
-    <script src="/assets/js/components.js" defer></script>
+    <script src="/assets/js/main.js<?= $asset_version('/assets/js/main.js') ?>" defer></script>
+    <script src="/assets/js/navigation.js<?= $asset_version('/assets/js/navigation.js') ?>" defer></script>
+    <script src="/assets/js/components.js<?= $asset_version('/assets/js/components.js') ?>" defer></script>
 
 </head>
