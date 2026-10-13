@@ -3,7 +3,7 @@
 function get_seo_data($page_key, $custom_overrides = []): array
 {
     $base_url = 'https://gastonkrabansky.fr';
-    $default_image = $base_url . '/assets/images/profile/logo.webp';
+    $default_image = $base_url . '/assets/images/profile/photo.webp';
 
     $pages = [
         'accueil' => [

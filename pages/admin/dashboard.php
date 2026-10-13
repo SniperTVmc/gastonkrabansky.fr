@@ -36,7 +36,7 @@
                 <div class="admin-dashboard-grid">
 
                     <div class="admin-card admin-about-card">
-                        <img src="/assets/images/profile/logo.webp" alt="Avatar Gaston Krabansky" class="admin-about-img">
+                        <img src="/assets/images/profile/photo.webp" alt="Avatar Gaston Krabansky" class="admin-about-img">
                         <div class="admin-about-info">
                             <h3>Panneau d'Administration</h3>
                             <p>

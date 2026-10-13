@@ -43,7 +43,7 @@
             'title' => ($realisationItem['title'] ?? 'Réalisation BTS SIO') . ' — Gaston Krabansky',
             'description' => $realisationItem['short_description'] ?? $realisationItem['description'] ?? 'Découvrez cette réalisation professionnelle effectuée dans le cadre du BTS SIO SLAM par Gaston Krabansky.',
             'canonical' => 'https://gastonkrabansky.fr/bts-sio/realisations/' . rawurlencode($id),
-            'og_image' => !empty($realisationItem['image']) ? $realisationItem['image'] : '/assets/images/profile/logo.webp',
+            'og_image' => !empty($realisationItem['image']) ? $realisationItem['image'] : '/assets/images/profile/photo.webp',
             'og_type' => 'article',
             'schema' => [
                     '@context' => 'https://schema.org',

@@ -43,7 +43,7 @@
             'title' => ($veilleItem['title'] ?? 'Veille Technologique') . ' — Gaston Krabansky',
             'description' => $veilleItem['short_description'] ?? $veilleItem['description'] ?? 'Consultez cette veille technologique menée dans le cadre du BTS SIO par Gaston Krabansky.',
             'canonical' => 'https://gastonkrabansky.fr/bts-sio/veilles/' . rawurlencode($id),
-            'og_image' => !empty($veilleItem['image']) ? $veilleItem['image'] : '/assets/images/profile/logo.webp',
+            'og_image' => !empty($veilleItem['image']) ? $veilleItem['image'] : '/assets/images/profile/photo.webp',
             'og_type' => 'article',
             'schema' => [
                     '@context' => 'https://schema.org',

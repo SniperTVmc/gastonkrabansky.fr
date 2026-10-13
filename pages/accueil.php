@@ -34,7 +34,7 @@
             <h2 class="section-title">À propos de <span>moi</span></h2>
             <div class="about-grid">
                 <div class="about-img">
-                    <img src="/assets/images/profile/logo.webp"
+                    <img src="/assets/images/profile/photo.webp"
                          alt="Portrait de Gaston Krabansky, développeur Java"
                          width="512" height="512" loading="eager">
                 </div>
