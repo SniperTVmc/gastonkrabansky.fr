@@ -22,19 +22,22 @@
         <p>Le site est édité par <strong>Gaston Krabansky</strong>.</p>
         <p>E-mail : <a href="mailto:contact@gastonkrabansky.fr">contact@gastonkrabansky.fr</a><br>
             Téléphone : <a href="tel:+33648545504">+33 6 48 54 55 04</a><br>
-            Adresse : <strong>à compléter par l’éditeur</strong>.</p>
-        <p>Statut juridique et numéro d’immatriculation : <strong>à compléter si applicable</strong>.</p>
+        </p>
     </section>
 
     <section class="info-block">
         <h3>Directeur de la publication</h3>
-        <p>Gaston Krabansky.</p>
+        <p>Le directeur de la publication est <strong>Gaston Krabansky</strong>.</p>
     </section>
 
     <section class="info-block">
         <h3>Hébergement</h3>
-        <p>Hébergeur : <strong>à compléter avant publication définitive</strong>.</p>
-        <p>Adresse et coordonnées de l’hébergeur : <strong>à compléter par l’éditeur</strong>.</p>
+        <p>Le site est hébergé par <strong>OVH SAS</strong>.</p>
+        <p>
+            Adresse : 2 rue Kellermann - 59100 Roubaix - France<br>
+            Téléphone : 1007 (ou +33 9 72 10 10 07 depuis l'étranger)<br>
+            Site web : <a href="https://www.ovhcloud.com" target="_blank" rel="noopener noreferrer">www.ovhcloud.com</a>
+        </p>
     </section>
 
     <section class="info-block">
