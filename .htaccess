@@ -6,6 +6,8 @@ RewriteEngine On
 </IfModule>
 RewriteRule (^|/)(?:\.git(?:/|$)|\.idea(?:/|$)|includes(?:/|$)) - [F,L,NC]
 RewriteRule (^|/)\.(?!well-known(?:/|$)) - [F,L,NC]
+# Keep environment files private, including deployment-specific variants.
+RewriteRule (^|/)\.env(?:\.[^/]+)?$ - [F,L,NC]
 RewriteRule \.(?:bak|conf|dist|ini|log|old|orig|save|sh|sql|swp|yml|yaml)$ - [F,L,NC]
 
 # HTTP security headers.
