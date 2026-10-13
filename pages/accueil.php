@@ -129,7 +129,6 @@
             </p>
 
             <div class="featured-project-card-landscape">
-                <!-- En-tête de la carte : Titre & Badges -->
                 <div class="featured-header-row">
                     <div>
                         <h3>EssentialsX-GUI</h3>
@@ -143,14 +142,12 @@
                     </div>
                 </div>
 
-                <!-- Aperçu visuel en format paysage (1920x1080 mis en valeur) -->
                 <div class="featured-image-landscape">
                     <img src="/assets/images/projects/essentialsx-gui.webp"
                          alt="Aperçu du plugin EssentialsX-GUI"
-                         width="1920" height="1080" loading="lazy">
+                         width="1024" height="576" loading="lazy">
                 </div>
 
-                <!-- Contenu en grille sous l'image -->
                 <div class="featured-grid-bottom">
                     <div class="featured-block">
                         <h4><i class="fas fa-info-circle"></i> De quoi s'agit-il ?</h4>
@@ -186,7 +183,6 @@
                     </div>
                 </div>
 
-                <!-- Actions de fin de carte -->
                 <div class="featured-actions-row">
                     <a href="/projets/essentialsx-gui" class="btn btn-fill">Découvrir les détails <i class="fas fa-arrow-right"></i></a>
                     <a href="https://github.com/SniperTVmc/" target="_blank" class="btn btn-outline" aria-label="Voir sur GitHub"><i class="fab fa-github"></i> Code source</a>
