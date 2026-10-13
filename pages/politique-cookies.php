@@ -30,7 +30,7 @@
             <li><strong>analytics_visitor</strong> : permet de distinguer un visiteur récurrent sans stocker directement son adresse IP, conservé au maximum deux ans ;</li>
             <li><strong>analytics_consent</strong> : mémorise le choix relatif au suivi lorsqu’un mécanisme de consentement est disponible.</li>
         </ul>
-        <p>Ces cookies sont utilisés pour mesurer l’audience, les parcours et les performances du site. Le détail des données associées est présenté dans la <a href="/politique-de-confidentialite">politique de confidentialité</a>.</p>
+        <p>Ces cookies sont activés par défaut et servent à mesurer l’audience, les parcours et les performances du site. Vous pouvez les refuser via le bandeau ou modifier votre choix depuis cette page. Le détail des données associées est présenté dans la <a href="/politique-de-confidentialite">politique de confidentialité</a>.</p>
     </section>
 
     <section class="info-block">
@@ -40,8 +40,9 @@
 
     <section class="info-block">
         <h3>Gérer les cookies</h3>
-        <p>Vous pouvez bloquer ou supprimer les cookies depuis les réglages de votre navigateur. Le blocage de certains cookies peut limiter le fonctionnement de certaines fonctionnalités.</p>
+        <p>Vous pouvez accepter ou refuser le suivi depuis le bandeau, puis bloquer ou supprimer les cookies depuis les réglages de votre navigateur. Le refus du suivi n’empêche pas la consultation du site.</p>
         <p>Pour toute question concernant les traceurs du site, contactez <a href="mailto:contact@gastonkrabansky.fr">contact@gastonkrabansky.fr</a>.</p>
+        <button type="button" class="btn btn-outline" data-cookie-reset>Modifier mon choix</button>
     </section>
 
     <p><small>Dernière mise à jour : 13 octobre 2026.</small></p>

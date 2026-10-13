@@ -65,6 +65,36 @@ function trackAction(actionType, targetDetail) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    const cookieBanner = document.getElementById('cookie-banner');
+    const resetCookieChoice = document.querySelector('[data-cookie-reset]');
+    const cookieConsent = document.cookie
+        .split('; ')
+        .find(row => row.startsWith('analytics_consent='))
+        ?.split('=')[1];
+
+    if (cookieBanner && !cookieConsent) {
+        cookieBanner.hidden = false;
+    }
+
+    cookieBanner?.querySelectorAll('[data-cookie-choice]').forEach(button => {
+        button.addEventListener('click', () => {
+            const choice = button.dataset.cookieChoice;
+            document.cookie = `analytics_consent=${choice === 'accept' ? '1' : '0'}; max-age=31536000; path=/; samesite=lax`;
+
+            if (choice === 'reject') {
+                document.cookie = 'analytics_session=; max-age=0; path=/; samesite=lax';
+                document.cookie = 'analytics_visitor=; max-age=0; path=/; samesite=lax';
+            }
+
+            window.location.reload();
+        });
+    });
+
+    resetCookieChoice?.addEventListener('click', () => {
+        document.cookie = 'analytics_consent=; max-age=0; path=/; samesite=lax';
+        window.location.reload();
+    });
+
     const startedAt = performance.now();
     const send = (payload) => {
         const body = JSON.stringify(payload);

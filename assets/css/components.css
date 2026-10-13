@@ -3,6 +3,83 @@
    ========================================================================== */
 
 /* --- HERO --- */
+.cookie-banner {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1100;
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    width: min(680px, calc(100vw - 48px));
+    padding: 22px 24px;
+    color: var(--text-color);
+    background: rgba(24, 21, 19, 0.94);
+    border: 1px solid var(--border-highlight);
+    border-radius: 16px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(16px);
+}
+
+.cookie-banner[hidden] {
+    display: none;
+}
+
+.cookie-banner-content {
+    flex: 1;
+}
+
+.cookie-banner h2 {
+    margin-bottom: 4px;
+    color: var(--main-color);
+    font-size: 1rem;
+}
+
+.cookie-banner p {
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+.cookie-banner p a {
+    white-space: nowrap;
+}
+
+.cookie-banner-actions {
+    display: flex;
+    flex-shrink: 0;
+    gap: 10px;
+}
+
+.cookie-button {
+    padding: 9px 14px;
+    border: 1px solid var(--border-highlight);
+    border-radius: 8px;
+    font: inherit;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cookie-button-primary {
+    color: var(--bg-color);
+    background: var(--main-color);
+}
+
+.cookie-button-primary:hover {
+    background: var(--accent-sand);
+}
+
+.cookie-button-secondary {
+    color: var(--text-color);
+    background: transparent;
+}
+
+.cookie-button-secondary:hover {
+    background: rgba(223, 155, 103, 0.12);
+}
+
+/* --- HERO --- */
 #hero {
     height: calc(100vh - var(--nav-height));
     display: flex;

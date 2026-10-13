@@ -18,3 +18,18 @@
         <a href="/politique-cookies">Cookies</a>
     </div>
 </footer>
+
+<aside id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-banner-title" aria-describedby="cookie-banner-description" hidden>
+    <div class="cookie-banner-content">
+        <h2 id="cookie-banner-title">Un petit mot sur les cookies <i class="fas fa-cookie-bite"></i></h2>
+        <p id="cookie-banner-description">
+            Les cookies d’audience sont activés par défaut pour m’aider à améliorer le site. Vous pouvez les refuser à tout moment.<br>
+            <strong>Aucun cookie d'audience n’est utilisé pour vous identifier personnellement ou retransmettre vos données à des tiers.</strong><br>
+            <a href="/politique-cookies">En savoir plus</a>
+        </p>
+    </div>
+    <div class="cookie-banner-actions">
+        <button type="button" class="cookie-button cookie-button-secondary" data-cookie-choice="reject">Refuser</button>
+        <button type="button" class="cookie-button cookie-button-primary" data-cookie-choice="accept">Garder activés</button>
+    </div>
+</aside>

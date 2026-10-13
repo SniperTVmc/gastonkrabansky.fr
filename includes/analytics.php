@@ -30,9 +30,9 @@ function analytics_allowed(): bool
     if (!array_key_exists('analytics_consent', $_COOKIE)) {
         return true;
     }
-    return !in_array(
+    return in_array(
         strtolower((string) $_COOKIE['analytics_consent']),
-        ['0', 'false', 'no', '拒否'],
+        ['1', 'true', 'yes', 'accept'],
         true
     );
 }
@@ -142,7 +142,7 @@ function analytics_cookie(string $name, string $value, int $expires): void
             'expires' => $expires,
             'path' => '/',
             'secure' => !empty($_SERVER['HTTPS']),
-            'httponly' => true,
+            'httponly' => false,
             'samesite' => 'Lax',
         ]);
     }

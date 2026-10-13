@@ -141,6 +141,20 @@
 }
 
 @media screen and (max-width: 480px) {
+    .cookie-banner {
+        right: 12px;
+        bottom: 12px;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 14px;
+        width: calc(100vw - 24px);
+        padding: 18px;
+    }
+
+    .cookie-banner-actions {
+        justify-content: flex-end;
+    }
+
     .section-title {
         font-size: 1.9rem;
     }
