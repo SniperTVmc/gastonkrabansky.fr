@@ -1,4 +1,10 @@
 <?php
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+
+    require_once __DIR__ . '/tracker.php';
+
     if (!function_exists('get_seo_data')) {
         require_once __DIR__ . '/seo.php';
     }

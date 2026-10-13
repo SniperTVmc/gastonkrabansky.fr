@@ -19,6 +19,14 @@
 
         <li><a href="/cv" data-nav="cv">CV</a></li>
         <li><a href="/contact" data-nav="contact">Contact</a></li>
+
+        <?php if (isset($_SESSION['admin_logged']) && $_SESSION['admin_logged'] === true): ?>
+            <li>
+                <a href="/admin/dashboard" data-nav="admin" title="Tableau de bord Admin">
+                    <i class="fas fa-user-shield"></i>
+                </a>
+            </li>
+        <?php endif; ?>
     </ul>
     <button class="burger" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
 </nav>

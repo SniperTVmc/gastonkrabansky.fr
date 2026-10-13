@@ -1,9 +1,9 @@
 /* ==========================================================================
-   COMPONENTS.JS — Comportements des composants interactifs
-   Système d'onglets (page parcours) + envoi du formulaire de contact.
+   COMPONENTS.JS — Interactive Component Behaviors
+   Tab system (page navigation) + submitting the contact form.
    ========================================================================== */
 
-// --- Système d'onglets ---
+// --- Tab System ---
 const tabBtns = document.querySelectorAll('.tab-btn');
 const tabContents = document.querySelectorAll('.tab-content');
 
@@ -21,7 +21,7 @@ if (tabBtns.length && tabContents.length) {
     });
 }
 
-// --- Formulaire de contact (Web3Forms) ---
+// --- Contact Form (Web3Forms) ---
 const contactForm = document.getElementById('contact-form');
 const formMessage = document.getElementById('form-message');
 
