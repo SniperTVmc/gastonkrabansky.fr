@@ -56,6 +56,21 @@
 		<priority>0.8000</priority>
 	</url>
 	<url>
+		<loc>https://gastonkrabansky.fr/mentions-legales</loc>
+		<lastmod>2026-10-13T13:17:00+00:00</lastmod>
+		<priority>0.5000</priority>
+	</url>
+	<url>
+		<loc>https://gastonkrabansky.fr/politique-de-confidentialite</loc>
+		<lastmod>2026-10-13T13:17:00+00:00</lastmod>
+		<priority>0.5000</priority>
+	</url>
+	<url>
+		<loc>https://gastonkrabansky.fr/politique-cookies</loc>
+		<lastmod>2026-10-13T13:17:00+00:00</lastmod>
+		<priority>0.5000</priority>
+	</url>
+	<url>
 		<loc>https://gastonkrabansky.fr/assets/documents/cv/cv.pdf</loc>
 		<lastmod>2026-10-10T14:42:31+00:00</lastmod>
 		<priority>0.8000</priority>

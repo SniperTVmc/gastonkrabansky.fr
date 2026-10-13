@@ -12,4 +12,9 @@
         <a href="/contact">Contact</a>·
         <a href="/bts-sio">BTS SIO</a>
     </div>
+    <div class="footer-links legal-links">
+        <a href="/mentions-legales">Mentions légales</a>·
+        <a href="/politique-de-confidentialite">Confidentialité</a>·
+        <a href="/politique-cookies">Cookies</a>
+    </div>
 </footer>

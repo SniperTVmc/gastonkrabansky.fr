@@ -101,6 +101,45 @@ function get_seo_data($page_key, $custom_overrides = []): array
                 'name' => 'Contact'
             ]
         ],
+        'mentions_legales' => [
+            'title' => 'Mentions légales — Gaston Krabansky',
+            'description' => 'Mentions légales du site gastonkrabansky.fr : éditeur, hébergement, propriété intellectuelle et responsabilités.',
+            'canonical' => $base_url . '/mentions-legales',
+            'robots' => 'index, follow',
+            'og_type' => 'website',
+            'og_image' => $default_image,
+            'schema' => [
+                '@context' => 'https://schema.org',
+                '@type' => 'WebPage',
+                'name' => 'Mentions légales'
+            ]
+        ],
+        'politique_confidentialite' => [
+            'title' => 'Politique de confidentialité — Gaston Krabansky',
+            'description' => 'Politique de confidentialité du site gastonkrabansky.fr et informations sur le traitement des données personnelles.',
+            'canonical' => $base_url . '/politique-de-confidentialite',
+            'robots' => 'index, follow',
+            'og_type' => 'website',
+            'og_image' => $default_image,
+            'schema' => [
+                '@context' => 'https://schema.org',
+                '@type' => 'WebPage',
+                'name' => 'Politique de confidentialité'
+            ]
+        ],
+        'politique_cookies' => [
+            'title' => 'Politique cookies — Gaston Krabansky',
+            'description' => 'Politique relative aux cookies et traceurs utilisés par le site gastonkrabansky.fr.',
+            'canonical' => $base_url . '/politique-cookies',
+            'robots' => 'index, follow',
+            'og_type' => 'website',
+            'og_image' => $default_image,
+            'schema' => [
+                '@context' => 'https://schema.org',
+                '@type' => 'WebPage',
+                'name' => 'Politique cookies'
+            ]
+        ],
         'bts_presentation' => [
             'title' => 'Le BTS SIO SLAM — Présentation & Programme',
             'description' => 'Présentation détaillée de mon parcours en BTS SIO option SLAM (Solutions Logicielles et Applications Métiers) à Lille.',

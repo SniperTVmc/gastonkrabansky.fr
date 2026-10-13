@@ -1,0 +1,52 @@
+<?php
+    $page_seo_key = 'politique_cookies';
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<?php include __DIR__ . "/../includes/header.php"; ?>
+<body data-page="politique-cookies">
+<?php include __DIR__ . "/../includes/navbar.php"; ?>
+
+<div class="breadcrumb">
+    <a href="/">Accueil</a> / <span class="current">Cookies</span>
+</div>
+
+<div class="page-header">
+    <h1>Politique des <span>cookies</span></h1>
+    <p>Informations sur les cookies et traceurs susceptibles d’être utilisés sur ce site.</p>
+</div>
+
+<main class="container detail-content">
+    <section class="info-block">
+        <h3>Qu’est-ce qu’un cookie ?</h3>
+        <p>Un cookie est un petit fichier enregistré par votre navigateur. Il peut être nécessaire au fonctionnement du site ou servir à mémoriser une préférence et à produire des statistiques.</p>
+    </section>
+
+    <section class="info-block">
+        <h3>Cookies analytiques du site</h3>
+        <p>Le suivi interne peut utiliser les cookies suivants :</p>
+        <ul>
+            <li><strong>analytics_session</strong> : identifie une session de navigation, conservé au maximum un an ;</li>
+            <li><strong>analytics_visitor</strong> : permet de distinguer un visiteur récurrent sans stocker directement son adresse IP, conservé au maximum deux ans ;</li>
+            <li><strong>analytics_consent</strong> : mémorise le choix relatif au suivi lorsqu’un mécanisme de consentement est disponible.</li>
+        </ul>
+        <p>Ces cookies sont utilisés pour mesurer l’audience, les parcours et les performances du site. Le détail des données associées est présenté dans la <a href="/politique-de-confidentialite">politique de confidentialité</a>.</p>
+    </section>
+
+    <section class="info-block">
+        <h3>Services externes</h3>
+        <p>Le formulaire et certaines pages chargent des services tiers, notamment Web3Forms, hCaptcha, Google Fonts, Font Awesome et Google Docs Viewer. Ces services peuvent utiliser leurs propres cookies ou mécanismes similaires. Consultez leurs politiques respectives pour connaître leurs pratiques.</p>
+    </section>
+
+    <section class="info-block">
+        <h3>Gérer les cookies</h3>
+        <p>Vous pouvez bloquer ou supprimer les cookies depuis les réglages de votre navigateur. Le blocage de certains cookies peut limiter le fonctionnement de certaines fonctionnalités.</p>
+        <p>Pour toute question concernant les traceurs du site, contactez <a href="mailto:contact@gastonkrabansky.fr">contact@gastonkrabansky.fr</a>.</p>
+    </section>
+
+    <p><small>Dernière mise à jour : 13 octobre 2026.</small></p>
+</main>
+
+<?php include __DIR__ . "/../includes/footer.php"; ?>
+</body>
+</html>

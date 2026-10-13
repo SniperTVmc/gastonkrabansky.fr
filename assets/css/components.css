@@ -663,6 +663,13 @@
     margin-bottom: 10px;
 }
 
+/* Legal pages use the full content width for easier reading. */
+body[data-page="mentions-legales"] .detail-content,
+body[data-page="politique-de-confidentialite"] .detail-content,
+body[data-page="politique-cookies"] .detail-content {
+    max-width: var(--max-width);
+}
+
 .detail-links {
     display: flex;
     gap: 15px;
