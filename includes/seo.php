@@ -192,14 +192,16 @@ function get_seo_data($page_key, $custom_overrides = []): array
 
     $config = $pages[$page_key] ?? $pages['accueil'];
 
-    // Application des surcharges personnalisées si fournies (ex: page de détail dynamique)
     foreach ($custom_overrides as $key => $value) {
         if (!empty($value)) {
             $config[$key] = $value;
         }
     }
 
-    $config['description'] = trim(preg_replace('/\s+/', ' ', strip_tags($config['description'])));
+    $config['description'] = $config['description']
+            |> strip_tags(...)
+            |> (fn($x) => preg_replace('/\s+/', ' ', $x))
+            |> trim(...);
     $description_length = function_exists('mb_strlen')
         ? mb_strlen($config['description'])
         : strlen($config['description']);
@@ -210,7 +212,7 @@ function get_seo_data($page_key, $custom_overrides = []): array
         $config['description'] = rtrim($description, " \t\n\r\0\x0B.,;:") . '...';
     }
 
-    if (!empty($config['og_image']) && strpos($config['og_image'], 'http') !== 0) {
+    if (!empty($config['og_image']) && !str_starts_with($config['og_image'], 'http')) {
         $image_path = preg_replace('#^(?:\.\./)+#', '', $config['og_image']);
         $config['og_image'] = $base_url . '/' . ltrim($image_path, '/');
     }
