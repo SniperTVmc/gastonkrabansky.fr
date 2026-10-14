@@ -1,33 +1,39 @@
 # Gaston Krabansky — Portfolio
 
-> Portfolio professionnel et personnel de Gaston Krabansky, développeur Java junior spécialisé en développement backend / logiciel et administration système, étudiant en BTS SIO option SLAM, basé à Lille, France.
+> Développeur Java junior et étudiant en BTS SIO SLAM à Lille. Spécialisé en développement backend et administration système Linux.
 
-## Profil et Compétences
-- Nom : Gaston Krabansky
-- Rôle : Développeur backend / logiciel, développeur Java et administrateur système Linux
-- Formation : BTS SIO option SLAM (Solutions Logicielles et Applications Métiers)
-- Localisation : Lille, Hauts-de-France
-- Technologies principales : Java, Python, PHP, SQL, HTML5, CSS3, JavaScript, Linux, Docker et plugins Minecraft
-- Environnements et outils : Git, GitHub, Maven, Gradle, Apache2, MariaDB, MySQL, Cloudflare et JetBrains
-- Architecture du site : PHP natif, fichiers JSON, sans framework ni base de données
+## Pages Principales
 
-## Projets principaux
-- EssentialsX GUI : plugin Minecraft open source en Java, accompagné d'une documentation dédiée
-- L'Étoile du Jeu : projet web réalisé dans le cadre du BTS SIO
-- Portfolio : site personnel présentant le profil, les compétences, les expériences et les projets de Gaston Krabansky
+- [Accueil](https://gastonkrabansky.fr/): Portfolio officiel de Gaston Krabansky.
+- [Compétences & Stack Technique](https://gastonkrabansky.fr/competences): Technologies maîtrisées (Java, Python, Linux, SQL, Docker).
+- [CV](https://gastonkrabansky.fr/cv): Parcours, formations et compétences téléchargeables.
+- [Contact](https://gastonkrabansky.fr/contact): Formulaire de contact pour opportunités professionnelles.
 
-## Pages Officielles
-- Accueil : https://gastonkrabansky.fr/
-- Compétences : https://gastonkrabansky.fr/competences
-- Expériences : https://gastonkrabansky.fr/experiences
-- Projets & Open Source : https://gastonkrabansky.fr/projets
-- CV : https://gastonkrabansky.fr/cv
-- Contact : https://gastonkrabansky.fr/contact
-- BTS SIO - Présentation : https://gastonkrabansky.fr/bts-sio
-- BTS SIO - Réalisations : https://gastonkrabansky.fr/bts-sio/realisations
-- Veilles Technologiques : https://gastonkrabansky.fr/bts-sio/veilles
+## BTS SIO SLAM
 
-## Profils Externes
-- GitHub : https://github.com/SniperTVmc/
-- LinkedIn : https://www.linkedin.com/in/gaston-krabansky/
-- Documentation EssentialsX-GUI : https://sniper-tvmc.gitbook.io/essentialsx-gui/
+- [Présentation BTS SIO](https://gastonkrabansky.fr/bts-sio): Présentation du parcours Solutions Logicielles et Applications Métiers.
+- [Réalisations BTS SIO](https://gastonkrabansky.fr/bts-sio/realisations): Synthèse des projets académiques et professionnels.
+- [Veilles Technologiques](https://gastonkrabansky.fr/bts-sio/veilles): Dossier de veilles technologiques (Java, Linux, SDD avec l'IA).
+- [Veille SDD & IA](https://gastonkrabansky.fr/bts-sio/veilles/veille-sdd-ia): Analyse du Spec-Driven Development assisté par IA.
+- [Projet L'Étoile du Jeu](https://gastonkrabansky.fr/bts-sio/realisations/etoile-du-jeu): Réalisation web pour association dans le cadre du BTS.
+
+## Projets & Open Source
+
+- [Tous les Projets](https://gastonkrabansky.fr/projets): Vue d'ensemble des réalisations logicielles.
+- [EssentialsX-GUI](https://gastonkrabansky.fr/projets/essentialsx-gui): Plugin Minecraft open source développé en Java.
+- [L'Étoile du Jeu](https://gastonkrabansky.fr/projets/etoile-du-jeu): Développement web et gestion de projet associatif.
+- [Portfolio Personnel](https://gastonkrabansky.fr/projets/portfolio): Site développé en PHP natif et architecture JSON sans framework.
+
+## Expériences
+
+- [Parcours Professionnel](https://gastonkrabansky.fr/experiences): Vue globale des stages et expériences en entreprise et formation.
+- [Stage Décathlon](https://gastonkrabansky.fr/experiences/professionnel/stage-decathlon): Stage pratique de 6 semaines.
+- [Stage France 3](https://gastonkrabansky.fr/experiences/professionnel/stage-france-3): Stage d'observation en administration informatique.
+- [BTS SIO SLAM](https://gastonkrabansky.fr/experiences/scolaire/bts-sio): Formation supérieure en développement logiciel.
+- [Baccalauréat Général](https://gastonkrabansky.fr/experiences/scolaire/bac): Spécialités NSI (Numérique et Sciences Informatiques) & Mathématiques.
+
+## Informations Légales
+
+- [Mentions légales](https://gastonkrabansky.fr/mentions-legales): Éditeur, hébergement et responsabilités.
+- [Politique de confidentialité](https://gastonkrabansky.fr/politique-de-confidentialite): Traitement des données personnelles.
+- [Politique cookies](https://gastonkrabansky.fr/politique-cookies): Gestion des traceurs.

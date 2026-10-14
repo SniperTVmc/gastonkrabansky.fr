@@ -36,7 +36,7 @@
                 <div class="about-img">
                     <img src="/assets/images/profile/photo.webp"
                          alt="Portrait de Gaston Krabansky, développeur Java"
-                         width="512" height="512" loading="eager">
+                         width="512" height="512" loading="eager" fetchpriority="high">
                 </div>
                 <div class="about-text">
                     <p>
@@ -58,11 +58,11 @@
                     <div class="about-footer-row">
                         <span></span>
                         <span class="text-icons-inline has-tooltip-subtle" data-tooltip="Mes coups de cœur">
-                            <i class="favorite-icon icon-tlou" aria-label="The Last of Us"></i>
-                            <i class="favorite-icon icon-lis" aria-label="Life is Strange"></i>
-                            <i class="favorite-icon icon-dbh" aria-label="Detroit: Become Human"></i>
-                            <i class="favorite-icon icon-br-ba" aria-label="Breaking Bad"></i>
-                            <i class="favorite-icon icon-bcs" aria-label="Better Call Saul"></i>
+                            <i class="favorite-icon icon-tlou" aria-hidden="true"></i><span class="sr-only">The Last of Us</span>
+                            <i class="favorite-icon icon-lis" aria-hidden="true"></i><span class="sr-only">Life is Strange</span>
+                            <i class="favorite-icon icon-dbh" aria-hidden="true"></i><span class="sr-only">Detroit: Become Human</span>
+                            <i class="favorite-icon icon-br-ba" aria-hidden="true"></i><span class="sr-only">Breaking Bad</span>
+                            <i class="favorite-icon icon-bcs" aria-hidden="true"></i><span class="sr-only">Better Call Saul</span>
                         </span>
                     </div>
 

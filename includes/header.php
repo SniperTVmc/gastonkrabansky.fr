@@ -36,8 +36,8 @@
 
     <!-- External resources -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="preconnect" href="https://web3forms.com">
-    <link rel="preconnect" href="https://hcaptcha.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Open Graph -->
     <meta property="og:locale" content="fr_FR">

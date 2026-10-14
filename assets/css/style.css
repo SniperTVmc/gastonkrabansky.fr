@@ -4,6 +4,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
+/* --- FONT AWESOME --- */
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-brands-400.woff2') format('woff2');
+}
+
 /* --- COLOR SHADE VARIABLES --- */
 :root {
     --bg-color: #0b0908;
@@ -14,7 +31,7 @@
     --border-highlight: #c88452;
 
     --text-color: #f7f4f0;
-    --text-secondary: #aba19a;
+    --text-secondary: #bcb2ab;
 
     --main-color: #df9b67;
     --main-darker: #c88452;
@@ -62,6 +79,16 @@ a {
     color: var(--main-color);
     text-decoration: none;
     transition: all 0.3s ease;
+}
+
+p a {
+    color: #f7f4f0;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+p a:hover, .container a:hover {
+    color: var(--main-color);
 }
 
 ul {

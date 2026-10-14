@@ -19,7 +19,7 @@
     </div>
 </footer>
 
-<aside id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-banner-title" aria-describedby="cookie-banner-description" hidden>
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-banner-title" aria-describedby="cookie-banner-description" aria-modal="false" hidden>
     <div class="cookie-banner-content">
         <h2 id="cookie-banner-title">Un petit mot sur les cookies <i class="fas fa-cookie-bite"></i></h2>
         <p id="cookie-banner-description">
@@ -32,4 +32,4 @@
         <button type="button" class="cookie-button cookie-button-secondary" data-cookie-choice="reject">Refuser</button>
         <button type="button" class="cookie-button cookie-button-primary" data-cookie-choice="accept">Garder activés</button>
     </div>
-</aside>
+</div>
