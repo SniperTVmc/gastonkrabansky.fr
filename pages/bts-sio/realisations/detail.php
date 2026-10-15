@@ -2,6 +2,7 @@
     require_once __DIR__ . "/../../../includes/loaders/realisations.php";
 
     $id = $_GET['id'] ?? '';
+    $id = is_string($id) ? trim($id) : '';
     $realisationItem = getRealisationItemById($id);
 
     // -------------------------------------------------------------------

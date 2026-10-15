@@ -183,30 +183,33 @@ function renderRealisationsDetailHtml($item): string
             $html .= '        <p style="color: var(--text-secondary); font-style: italic;">Aucune compétence répertoriée pour ce bloc.</p>' . "\n";
         } else {
             $html .= '        <div style="display: flex; flex-direction: column; gap: 20px;">' . "\n";
+            $competenceNames = array_keys($competencesRef);
 
-            foreach ($competencesRef as $compNom => $sousCompList) {
+            foreach (array_values($competencesRef) as $compIndex => $sousCompList) {
+                $compNom = $competenceNames[$compIndex];
                 $html .= '            <div class="info-block" style="margin-bottom: 0;">' . "\n";
                 $html .= '                <h4 style="font-size: 1.2rem; color: var(--text-color); margin-bottom: 15px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">' . htmlspecialchars($compNom, ENT_QUOTES, 'UTF-8') . '</h4>' . "\n";
 
                 if (!empty($sousCompList)) {
                     $html .= '                <div style="display: flex; flex-direction: column; gap: 12px;">' . "\n";
-                    foreach ($sousCompList as $libelleSub) {
-                        $subData = $blocProjet[$compNom][$libelleSub] ?? null;
+                    foreach ($sousCompList as $subIndex => $libelleSub) {
+                        $description = $blocProjet[(string) $compIndex][(string) $subIndex] ?? null;
 
-                        $isValide = ($subData && ($subData['status'] ?? '') === 'valide');
+                        $isValide = is_string($description) && $description !== '';
                         $statusIcon = $isValide ? '<i class="fas fa-check-circle" style="color: var(--success-color);"></i> Validée' : '<i class="fas fa-times-circle" style="color: var(--text-secondary);"></i> Non validée / Non concernée';
                         $subOpacity = $isValide ? '1' : '0.65';
                         $tagBg = $isValide ? 'rgba(46, 204, 113, 0.1)' : 'rgba(120, 120, 120, 0.1)';
                         $tagBorder = $isValide ? 'var(--success-color)' : 'var(--border-color)';
                         $tagColor = $isValide ? 'var(--success-color)' : 'var(--text-secondary)';
-                        $description = $subData['description'] ?? 'Non abordé / non concerné par ce projet.';
 
                         $html .= '                    <div style="background: var(--bg-color); padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); opacity: ' . $subOpacity . ';">' . "\n";
                         $html .= '                        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; flex-wrap: wrap; margin-bottom: 6px;">' . "\n";
                         $html .= '                            <span style="font-size: 0.9rem; font-weight: bold; color: var(--text-color);">• ' . htmlspecialchars($libelleSub, ENT_QUOTES, 'UTF-8') . '</span>' . "\n";
                         $html .= '                            <span class="tech-tag" style="background: ' . $tagBg . '; border: 1px solid ' . $tagBorder . '; color: ' . $tagColor . '; font-size: 0.75rem; padding: 2px 8px;">' . $statusIcon . '</span>' . "\n";
                         $html .= '                        </div>' . "\n";
-                        $html .= '                        <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem; text-align: left;">' . htmlspecialchars($description, ENT_QUOTES, 'UTF-8') . '</p>' . "\n";
+                        if ($isValide) {
+                            $html .= '                        <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem; text-align: left;">' . htmlspecialchars($description, ENT_QUOTES, 'UTF-8') . '</p>' . "\n";
+                        }
                         $html .= '                    </div>' . "\n";
                     }
                     $html .= '                </div>' . "\n";

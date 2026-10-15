@@ -10,184 +10,73 @@
     "label": "Voir la fiche complète du projet"
   },
   "blocs_mobilises": [
-    "En cours de rédaction..."
-  ],
-  "blocs_mobilises--DISABLED": [
     "Bloc 1 : Support et mise à disposition de services informatiques",
     "Bloc 2 : Conception et développement d’applications (SLAM)",
     "Bloc 3 : Cybersécurité des services informatiques"
   ],
-  "realisation_details--DISABLED": {
+  "realisation_details": {
     "bloc1": {
-      "Gérer le patrimoine informatique": {
-        "Recenser et identifier les ressources numériques": {
-          "status": "valide",
-          "description": "Recensement des ressources matérielles, logicielles et documentaires du site associatif."
-        },
-        "Vérifier le respect des règles d’utilisation des ressources numériques": {
-          "status": "valide",
-          "description": "Vérification des droits d'image et des licences des contenus intégrés au site."
-        }
+      "0": {
+        "0": "Recensement des ressources matérielles, logicielles et documentaires du site associatif.",
+        "5": "Vérification des droits d'image et des licences des contenus intégrés au site."
       },
-      "Répondre aux incidents et aux demandes d’assistance et d’évolution": {
-        "Collecter, suivre et orienter des demandes": {
-          "status": "valide",
-          "description": "Suivi des demandes d'évolution formulées par l'association."
-        },
-        "Traiter des demandes concernant les applications": {
-          "status": "valide",
-          "description": "Correction des anomalies et ajustements ergonomiques du site."
-        }
+      "1": {
+        "0": "Suivi des demandes d'évolution formulées par l'association.",
+        "2": "Correction des anomalies et ajustements ergonomiques du site."
       },
-      "Développer la présence en ligne de l’organisation": {
-        "Participer à la valorisation de l’image de l’organisation sur les médias numériques en tenant compte du cadre juridique et des enjeux économiques": {
-          "status": "valide",
-          "description": "Mise en valeur de l'association à travers un design web moderne."
-        },
-        "Participer à l’évolution d’un site Web exploitant les données de l’organisation": {
-          "status": "valide",
-          "description": "Création des pages dynamiques exploitant les données MySQL de l'association."
-        }
+      "2": {
+        "0": "Mise en valeur de l'association à travers un design web moderne.",
+        "2": "Création des pages dynamiques exploitant les données MySQL de l'association."
       },
-      "Travailler en mode projet": {
-        "Analyser les objectifs et les modalités d’organisation d’un projet": {
-          "status": "valide",
-          "description": "Étude du besoin initial de l'association."
-        },
-        "Planifier les activités": {
-          "status": "valide",
-          "description": "Utilisation d'un tableau Kanban pour le suivi des tâches."
-        },
-        "Évaluer les indicateurs de suivi d’un projet et analyser les écarts": {
-          "status": "valide",
-          "description": "Points réguliers sur l'avancement des livrables."
-        }
+      "3": {
+        "0": "Étude du besoin initial de l'association.",
+        "1": "Utilisation d'un tableau Kanban pour le suivi des tâches.",
+        "2": "Points réguliers sur l'avancement des livrables."
       },
-      "Mettre à disposition des utilisateurs un service informatique": {
-        "Réaliser les tests d’intégration et d’acceptation d’un service": {
-          "status": "valide",
-          "description": "Réalisation de tests fonctionnels avec l'association."
-        },
-        "Déployer un service": {
-          "status": "valide",
-          "description": "Mise en ligne du site web sur l'environnement de production."
-        },
-        "Accompagner les utilisateurs dans la mise en place d’un service": {
-          "status": "valide",
-          "description": "Présentation du site et de son interface d'administration aux membres."
-        }
+      "4": {
+        "0": "Réalisation de tests fonctionnels avec l'association.",
+        "1": "Mise en ligne du site web sur l'environnement de production.",
+        "2": "Présentation du site et de son interface d'administration aux membres."
       },
-      "Organiser son développement professionnel": {
-        "Mettre en place son environnement d’apprentissage personnel": {
-          "status": "valide",
-          "description": "Utilisation de Git, VS Code et d'un serveur local (XAMPP)."
-        },
-        "Mettre en œuvre des outils et stratégies de veille informationnelle": {
-          "status": "valide",
-          "description": "Recherche de documentation technique et bonnes pratiques web."
-        }
+      "5": {
+        "0": "Utilisation de Git, VS Code et d'un serveur local (XAMPP).",
+        "1": "Recherche de documentation technique et bonnes pratiques web."
       }
     },
     "bloc2": {
-      "Concevoir et développer une solution applicative": {
-        "Analyser un besoin exprimé et son contexte juridique": {
-          "status": "valide",
-          "description": "Analyse du cahier des charges fourni par le client associatif."
-        },
-        "Participer à la conception de l’architecture d’une solution applicative": {
-          "status": "valide",
-          "description": "Mise en place d'une architecture MVC simple en PHP."
-        },
-        "Modéliser une solution applicative": {
-          "status": "valide",
-          "description": "Création des diagrammes de cas d'utilisation et de classes."
-        },
-        "Identifier, développer, utiliser ou adapter des composants logiciels": {
-          "status": "valide",
-          "description": "Intégration de composants d'interface HTML5/CSS3/JS."
-        },
-        "Exploiter les technologies Web pour mettre en œuvre les échanges entre applications, y compris de mobilité": {
-          "status": "valide",
-          "description": "Utilisation de requêtes asynchrones (AJAX/Fetch)."
-        },
-        "Utiliser des composants d’accès aux données": {
-          "status": "valide",
-          "description": "Utilisation de PDO pour sécuriser les connexions à la base."
-        },
-        "Réaliser les tests nécessaires à la validation ou à la mise en production d’éléments adaptés ou développés": {
-          "status": "valide",
-          "description": "Jeux d'essais et tests unitaires des fonctions PHP."
-        },
-        "Rédiger des documentations technique et d’utilisation d’une solution applicative": {
-          "status": "valide",
-          "description": "Rédaction du manuel utilisateur et de la documentation technique."
-        },
-        "Exploiter les fonctionnalités d’un environnement de développement et de tests": {
-          "status": "valide",
-          "description": "Utilisation des outils de développement du navigateur et de XAMPP."
-        }
+      "0": {
+        "0": "Analyse du cahier des charges fourni par le client associatif.",
+        "1": "Mise en place d'une architecture MVC simple en PHP.",
+        "2": "Création des diagrammes de cas d'utilisation et de classes.",
+        "4": "Intégration de composants d'interface HTML5/CSS3/JS.",
+        "5": "Utilisation de requêtes asynchrones (AJAX/Fetch).",
+        "6": "Utilisation de PDO pour sécuriser les connexions à la base.",
+        "8": "Jeux d'essais et tests unitaires des fonctions PHP.",
+        "9": "Rédaction du manuel utilisateur et de la documentation technique.",
+        "10": "Utilisation des outils de développement du navigateur et de XAMPP."
       },
-      "Assurer la maintenance corrective ou évolutive d’une solution applicative": {
-        "Recueillir, analyser et mettre à jour les informations sur une version d’une solution applicative": {
-          "status": "valide",
-          "description": "Gestion des versions du code via Git."
-        },
-        "Évaluer la qualité d’une solution applicative": {
-          "status": "valide",
-          "description": "Vérification de la propreté du code et de l'ergonomie."
-        },
-        "Analyser et corriger un dysfonctionnement": {
-          "status": "valide",
-          "description": "Correction des bugs signalés lors des phases de tests."
-        },
-        "Mettre à jour des documentations technique et d’utilisation d’une solution applicative": {
-          "status": "valide",
-          "description": "Mise à jour du manuel suite aux évolutions du site."
-        },
-        "Élaborer et réaliser les tests des éléments mis à jour": {
-          "status": "valide",
-          "description": "Tests de non-régression après chaque modification."
-        }
+      "1": {
+        "0": "Gestion des versions du code via Git.",
+        "1": "Vérification de la propreté du code et de l'ergonomie.",
+        "2": "Correction des bugs signalés lors des phases de tests.",
+        "3": "Mise à jour du manuel suite aux évolutions du site.",
+        "4": "Tests de non-régression après chaque modification."
       },
-      "Gérer les données": {
-        "Exploiter des données à l’aide d’un langage de requêtes": {
-          "status": "valide",
-          "description": "Écriture de requêtes SQL (SELECT, INSERT, UPDATE, DELETE)."
-        },
-        "Concevoir ou adapter une base de données": {
-          "status": "valide",
-          "description": "Création du Modèle Conceptuel de Données (MCD) et du MLD sous MySQL."
-        },
-        "Administrer et déployer une base de données": {
-          "status": "valide",
-          "description": "Importation et configuration de la base sur le serveur de production via phpMyAdmin."
-        }
+      "2": {
+        "0": "Écriture de requêtes SQL (SELECT, INSERT, UPDATE, DELETE).",
+        "2": "Création du Modèle Conceptuel de Données (MCD) et du MLD sous MySQL.",
+        "3": "Importation et configuration de la base sur le serveur de production via phpMyAdmin."
       }
     },
     "bloc3": {
-      "Sécuriser les équipements et les usages des utilisateurs": {
-        "Identifier les menaces et mettre en œuvre les défenses appropriées": {
-          "status": "valide",
-          "description": "Sécurisation des mots de passe par hachage (password_hash)."
-        },
-        "Gérer les accès et les privilèges appropriés": {
-          "status": "valide",
-          "description": "Mise en place d'un système de session avec authentification (rôles admin / utilisateur)."
-        }
+      "2": {
+        "1": "Sécurisation des mots de passe par hachage (password_hash).",
+        "2": "Mise en place d'un système de session avec authentification (rôles admin / utilisateur)."
       },
-      "Assurer la cybersécurité d’une solution applicative et de son développement": {
-        "Participer à la vérification des éléments contribuant à la qualité d’un développement informatique": {
-          "status": "valide",
-          "description": "Vérification de la robustesse du code source."
-        },
-        "Prendre en compte la sécurité dans un projet de développement d’une solution applicative": {
-          "status": "valide",
-          "description": "Utilisation de requêtes préparées PDO pour contrer les injections SQL."
-        },
-        "Prévenir les attaques": {
-          "status": "valide",
-          "description": "Protection contre les failles XSS (htmlspecialchars) et injections SQL."
-        }
+      "4": {
+        "0": "Vérification de la robustesse du code source.",
+        "1": "Utilisation de requêtes préparées PDO pour contrer les injections SQL.",
+        "3": "Protection contre les failles XSS (htmlspecialchars) et injections SQL."
       }
     }
   }
