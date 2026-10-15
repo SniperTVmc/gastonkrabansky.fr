@@ -85,6 +85,9 @@ RewriteRule ^bts-sio/veilles/([^/]+)/?$ pages/bts-sio/veilles/detail.php?id=$1 [
 
 # Going to /admin opens the login page.
 RewriteRule ^admin/?$ pages/admin/login.php [END]
+RewriteRule ^admin/realisations/new/?$ pages/admin/realisation.php?new=1 [END,QSA]
+RewriteRule ^admin/realisations/([^/]+)/?$ pages/admin/realisation.php?id=$1 [END,QSA,NE]
+RewriteRule ^admin/realisations/?$ pages/admin/realisations.php [END,QSA]
 
 # Analytics dashboard: each category has an isolated, prepared-query view.
 RewriteRule ^(?:admin/)?stats/(acquisition|audience|content|interactions|technology|geography)/?$ pages/admin/stats/$1.php [END,QSA,NE]

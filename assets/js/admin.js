@@ -19,6 +19,61 @@ document.addEventListener('DOMContentLoaded', () => {
             toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
         });
     });
+    document.querySelectorAll('.admin-skill-item input[type="checkbox"]').forEach(checkbox => {
+        const description = checkbox.closest('.admin-skill-item')?.querySelector('textarea');
+        if (!description) return;
+        const updateVisibility = () => {
+            description.hidden = !checkbox.checked;
+            description.required = checkbox.checked;
+        };
+        checkbox.addEventListener('change', updateVisibility);
+        updateVisibility();
+    });
+
+    document.querySelectorAll('.admin-delete-form').forEach(form => {
+        form.addEventListener('submit', event => {
+            if (!window.confirm(form.dataset.confirm || 'Confirmer la suppression ?')) event.preventDefault();
+        });
+    });
+
+    const editorForm = document.querySelector('.admin-realisation-form');
+    if (editorForm) {
+        let initialState = new FormData(editorForm);
+        const hasChanges = () => {
+            const current = new FormData(editorForm);
+            const initialEntries = Array.from(initialState.entries());
+            const currentEntries = Array.from(current.entries());
+            return JSON.stringify(initialEntries) !== JSON.stringify(currentEntries);
+        };
+        editorForm.addEventListener('submit', () => { initialState = new FormData(editorForm); });
+        window.addEventListener('beforeunload', event => {
+            if (hasChanges()) {
+                event.preventDefault();
+                event.returnValue = '';
+            }
+        });
+    }
+
+    const iconInput = document.getElementById('realisation-icon');
+    const iconPreview = document.getElementById('realisation-icon-preview');
+    const iconStatus = document.getElementById('realisation-icon-status');
+    if (iconInput && iconPreview && iconStatus) {
+        const updateIconPreview = () => {
+            const value = iconInput.value.trim();
+            iconPreview.className = value;
+            if (!value || !/^fa[srbkltd]?\s+fa-[a-z0-9-]+$/i.test(value)) {
+                iconStatus.textContent = 'Format attendu : fas fa-nom-de-licone';
+                iconStatus.className = 'admin-field-help is-invalid';
+                return;
+            }
+            const content = window.getComputedStyle(iconPreview, '::before').content;
+            const exists = content && content !== 'none' && content !== 'normal';
+            iconStatus.textContent = exists ? 'Icône détectée' : 'Icône introuvable dans Font Awesome';
+            iconStatus.className = `admin-field-help ${exists ? 'is-valid' : 'is-invalid'}`;
+        };
+        iconInput.addEventListener('input', updateIconPreview);
+        updateIconPreview();
+    }
     document.querySelectorAll('.stats-chart').forEach(canvas => {
         if (typeof Chart === 'undefined') return;
         try {

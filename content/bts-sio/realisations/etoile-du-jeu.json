@@ -1,83 +1,74 @@
 {
-  "id": "etoile-du-jeu",
-  "rank": 1,
-  "title": "Site web : L'Étoile du jeu (En cours de rédaction...)",
-  "icon": "fas fa-globe",
-  "period": "01/01/2026 → 19/05/2026",
-  "type": "scolaire",
-  "link": {
-    "url": "/projets/etoile-du-jeu",
-    "label": "Voir la fiche complète du projet"
-  },
-  "blocs_mobilises": [
-    "Bloc 1 : Support et mise à disposition de services informatiques",
-    "Bloc 2 : Conception et développement d’applications (SLAM)",
-    "Bloc 3 : Cybersécurité des services informatiques"
-  ],
-  "realisation_details": {
-    "bloc1": {
-      "0": {
-        "0": "Recensement des ressources matérielles, logicielles et documentaires du site associatif.",
-        "5": "Vérification des droits d'image et des licences des contenus intégrés au site."
-      },
-      "1": {
-        "0": "Suivi des demandes d'évolution formulées par l'association.",
-        "2": "Correction des anomalies et ajustements ergonomiques du site."
-      },
-      "2": {
-        "0": "Mise en valeur de l'association à travers un design web moderne.",
-        "2": "Création des pages dynamiques exploitant les données MySQL de l'association."
-      },
-      "3": {
-        "0": "Étude du besoin initial de l'association.",
-        "1": "Utilisation d'un tableau Kanban pour le suivi des tâches.",
-        "2": "Points réguliers sur l'avancement des livrables."
-      },
-      "4": {
-        "0": "Réalisation de tests fonctionnels avec l'association.",
-        "1": "Mise en ligne du site web sur l'environnement de production.",
-        "2": "Présentation du site et de son interface d'administration aux membres."
-      },
-      "5": {
-        "0": "Utilisation de Git, VS Code et d'un serveur local (XAMPP).",
-        "1": "Recherche de documentation technique et bonnes pratiques web."
-      }
+    "id": "etoile-du-jeu",
+    "updated_at": "2026-10-15T14:42:48+00:00",
+    "rank": 1,
+    "title": "Réalisation d'un site web pour une association (Étoile du jeu)",
+    "description": "Évolution du site actuel pour l'association L'Étoile du jeu, visant à promouvoir les activités de l'association et à fournir des informations sur les événements et les jeux proposés. L'objectif étant d'optimiser le site déjà existant et améliorer sa sécurité selon les normes modernes.",
+    "icon": "fas fa-globe",
+    "period": "01/01/2026 → 19/05/2026",
+    "link": {
+        "url": "/projets/etoile-du-jeu",
+        "label": "Voir la fiche du projet"
     },
-    "bloc2": {
-      "0": {
-        "0": "Analyse du cahier des charges fourni par le client associatif.",
-        "1": "Mise en place d'une architecture MVC simple en PHP.",
-        "2": "Création des diagrammes de cas d'utilisation et de classes.",
-        "4": "Intégration de composants d'interface HTML5/CSS3/JS.",
-        "5": "Utilisation de requêtes asynchrones (AJAX/Fetch).",
-        "6": "Utilisation de PDO pour sécuriser les connexions à la base.",
-        "8": "Jeux d'essais et tests unitaires des fonctions PHP.",
-        "9": "Rédaction du manuel utilisateur et de la documentation technique.",
-        "10": "Utilisation des outils de développement du navigateur et de XAMPP."
-      },
-      "1": {
-        "0": "Gestion des versions du code via Git.",
-        "1": "Vérification de la propreté du code et de l'ergonomie.",
-        "2": "Correction des bugs signalés lors des phases de tests.",
-        "3": "Mise à jour du manuel suite aux évolutions du site.",
-        "4": "Tests de non-régression après chaque modification."
-      },
-      "2": {
-        "0": "Écriture de requêtes SQL (SELECT, INSERT, UPDATE, DELETE).",
-        "2": "Création du Modèle Conceptuel de Données (MCD) et du MLD sous MySQL.",
-        "3": "Importation et configuration de la base sur le serveur de production via phpMyAdmin."
-      }
-    },
-    "bloc3": {
-      "2": {
-        "1": "Sécurisation des mots de passe par hachage (password_hash).",
-        "2": "Mise en place d'un système de session avec authentification (rôles admin / utilisateur)."
-      },
-      "4": {
-        "0": "Vérification de la robustesse du code source.",
-        "1": "Utilisation de requêtes préparées PDO pour contrer les injections SQL.",
-        "3": "Protection contre les failles XSS (htmlspecialchars) et injections SQL."
-      }
+    "blocs_mobilises": [
+        "0",
+        "1",
+        "2"
+    ],
+    "realisation_details": {
+        "bloc1": {
+            "1": {
+                "2": "Correction et ajustements selon la volonté des dirigeants de l'association."
+            },
+            "2": {
+                "2": "Recréation du site web de l'entreprise en réutilisant leurs données actuelles."
+            },
+            "3": [
+                "Rédaction du contexte détaillé et recueil des besoins réels de l'association.",
+                "Organisation du planning détaillé prévisionnel et effectif avec des créneaux de 30 minutes à 4 heures Utilisant d'un outil de gestion de projet (Notion).",
+                "Présentation des comptes-rendus d'activité aux différents jalons (S+2, S+6, S+12)."
+            ],
+            "4": {
+                "1": "Mise en ligne du site web sur un environnement de test. Utilisation d'apache, phpMyAdmin, MariaDB."
+            },
+            "5": {
+                "0": "Choix et configuration des outils collaboratifs dans le but de partager les documents d'analyse et le code. Utilisation de GitHub, Visual Studio Code ou encore XAMP / Laragon.",
+                "2": "Répartition équitable des tâches individuelles au sein du groupe afin que chaque membre puisse valoriser sa propre contribution dans son dossier personnel."
+            }
+        },
+        "bloc2": [
+            {
+                "0": "Rédiger les spécifications techniques en intégrant les contraintes du RGPD.",
+                "1": "Mise en place d'une architecture personnalisée selon nos besoins.",
+                "2": "Création des diagrammes de cas d'utilisation et de classes.",
+                "4": "Intégration de composants d'interface HTML5/CSS3/JS.\r\nCréation de modules réutilisables (ex: éléments de page, gestion des erreurs, toasts, etc.)",
+                "5": "Utilisation de requêtes asynchrones (AJAX/Fetch).",
+                "6": "Utilisation de MySQLi pour sécuriser les connexions à la base.",
+                "9": "Rédaction du manuel utilisateur, de la documentation technique et d'un guide d'installation.",
+                "10": "Utilisation des outils de développement du navigateur et de XAMPP / Laragon."
+            },
+            [
+                "Gestion des versions du code via Git.",
+                "Vérification de la propreté du code et de l'ergonomie.",
+                "Correction des bugs signalés lors des phases de tests."
+            ],
+            {
+                "0": "Écriture de requêtes SQL (SELECT, INSERT, UPDATE, DELETE).",
+                "2": "Création du Modèle Conceptuel de Données (MCD) et du MLD sous MySQL. Création de la base et des tables dans un SGBD.",
+                "3": "Gestion des droits d'accès des utilisateurs, et importation et configuration de la base sur le serveur de test via phpMyAdmin."
+            }
+        ],
+        "bloc3": {
+            "2": {
+                "1": "Sécurisation des mots de passe par hachage (password_hash).",
+                "2": "Mise en place d'un système de session avec authentification (rôles admin / utilisateur)."
+            },
+            "4": [
+                "Vérification de la robustesse du code source.",
+                "Utilisation de requêtes préparées MySQLI pour contrer les injections SQL.",
+                "Respect des préconisations de sécurité de l'ANSSI dans le développement.",
+                "Protection contre les failles XSS (htmlspecialchars) et injections SQL."
+            ]
+        }
     }
-  }
 }

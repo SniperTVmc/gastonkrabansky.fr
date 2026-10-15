@@ -9,6 +9,12 @@
                 <i class="fas fa-chart-line"></i> Tableau de bord
             </a>
         </li>
+        <?php $realisationsActive = str_starts_with(trim(parse_url((string) ($_SERVER['REQUEST_URI'] ?? ''), PHP_URL_PATH) ?: '', '/'), 'admin/realisations'); ?>
+        <li>
+            <a href="/admin/realisations" data-nav="admin-realisations" class="<?= $realisationsActive ? 'active' : '' ?>">
+                <i class="fas fa-briefcase"></i> Réalisations
+            </a>
+        </li>
         <?php
             $statsPath = trim(parse_url((string)($_SERVER['REQUEST_URI'] ?? ''), PHP_URL_PATH) ?: '', '/');
             $statsActive = str_starts_with($statsPath, 'admin/stats') || str_starts_with($statsPath, 'stats');

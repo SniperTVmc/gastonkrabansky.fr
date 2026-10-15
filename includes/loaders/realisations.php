@@ -70,7 +70,13 @@ function renderRealisationsPageHtml(string $detailLinkBase = '/bts-sio/realisati
             $period = htmlspecialchars($item['period'] ?? '', ENT_QUOTES, 'UTF-8');
             $icon = htmlspecialchars($item['icon'] ?? 'fas fa-laptop-code', ENT_QUOTES, 'UTF-8');
             $detailUrl = $detailLinkBase . urlencode($id);
-            $blocsMobilises = $item['blocs_mobilises'] ?? [];
+            $referentiel = array_values(getReferentielOfficiel());
+            $blocsMobilises = array_filter(
+                array_map(
+                    static fn($index) => $referentiel[(int) $index]['nom'] ?? null,
+                    (array) ($item['blocs_mobilises'] ?? [])
+                )
+            );
 
             $html .= '        <div class="info-block" style="display: flex; flex-direction: column; gap: 15px;">' . "\n";
             $html .= '            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px;">' . "\n";
@@ -116,27 +122,10 @@ function renderRealisationsDetailHtml($item): string
 
     $title = htmlspecialchars($item['title'] ?? '', ENT_QUOTES, 'UTF-8');
     $period = htmlspecialchars($item['period'] ?? '', ENT_QUOTES, 'UTF-8');
+    $description = trim((string) ($item['description'] ?? ''));
     $link = $item['link'] ?? null;
     $projetDetails = $item['realisation_details'] ?? [];
     $referentielOfficiel = getReferentielOfficiel();
-
-    $domainesReferentiel = [
-        'bloc1' => [
-            'title' => 'Bloc 1 : Support & Services',
-            'subtitle' => 'Référentiel officiel : Support et mise à disposition de services informatiques',
-            'desc' => 'Gestion du patrimoine informatique, réponse aux incidents, présence en ligne, mode projet et déploiement.'
-        ],
-        'bloc2' => [
-            'title' => 'Bloc 2 : Conception & Dev (SLAM)',
-            'subtitle' => 'Référentiel officiel : Conception et développement d’applications',
-            'desc' => 'Conception, développement de solutions applicatives, maintenance et gestion/exploitation des données.'
-        ],
-        'bloc3' => [
-            'title' => 'Bloc 3 : Cybersécurité',
-            'subtitle' => 'Référentiel officiel : Cybersécurité des services informatiques',
-            'desc' => 'Protection des données, sécurisation des équipements, des applications et des usages utilisateurs.'
-        ]
-    ];
 
     $html = '<section class="container">' . "\n";
     $html .= '    <a href="/bts-sio/realisations" class="back-link"><i class="fas fa-arrow-left"></i> Retour aux réalisations</a>' . "\n\n";
@@ -148,6 +137,9 @@ function renderRealisationsDetailHtml($item): string
         $html .= '            <span class="stat-tag"><i class="far fa-calendar-alt"></i> ' . $period . '</span>' . "\n";
     }
     $html .= '        </div>' . "\n";
+    if ($description !== '') {
+        $html .= '        <div class="realisation-description" style="margin: 20px 0 0; color: var(--text-secondary); line-height: 1.7; text-align: left;">' . nl2br(htmlspecialchars($description, ENT_QUOTES, 'UTF-8')) . '</div>' . "\n";
+    }
     if ($link) {
         $html .= '        <div class="detail-links" style="margin-top: 20px;">' . "\n";
         $html .= '            <a href="' . htmlspecialchars($link['url'], ENT_QUOTES, 'UTF-8') . '" class="btn btn-fill" target="_blank"><i class="fas fa-external-link-alt"></i> ' . htmlspecialchars($link['label'], ENT_QUOTES, 'UTF-8') . '</a>' . "\n";
@@ -157,25 +149,26 @@ function renderRealisationsDetailHtml($item): string
 
     $html .= '    <div class="tab-buttons">' . "\n";
     $isActiveTab = true;
-    foreach ($domainesReferentiel as $key => $domaine) {
+    foreach ($referentielOfficiel as $key => $blocRef) {
+        $blocName = (string) ($blocRef['nom'] ?? $key);
         $activeClass = $isActiveTab ? ' active' : '';
-        $html .= '        <button class="tab-btn' . $activeClass . '" data-target="#' . $key . '">' . $domaine['title'] . '</button>' . "\n";
+        $html .= '        <button class="tab-btn' . $activeClass . '" data-target="#' . htmlspecialchars($key, ENT_QUOTES, 'UTF-8') . '">' . htmlspecialchars($blocName, ENT_QUOTES, 'UTF-8') . '</button>' . "\n";
         $isActiveTab = false;
     }
     $html .= '    </div>' . "\n\n";
 
     $isActiveContent = true;
-    foreach ($domainesReferentiel as $key => $domaine) {
+    foreach ($referentielOfficiel as $key => $blocRef) {
+        $blocName = (string) ($blocRef['nom'] ?? $key);
         $activeContentClass = $isActiveContent ? ' active-content' : '';
-        $html .= '    <div class="tab-content' . $activeContentClass . '" id="' . $key . '">' . "\n";
+        $html .= '    <div class="tab-content' . $activeContentClass . '" id="' . htmlspecialchars($key, ENT_QUOTES, 'UTF-8') . '">' . "\n";
 
         $html .= '        <div class="info-block" style="margin-bottom: 30px; border-left: 4px solid var(--main-color);">' . "\n";
-        $html .= '            <span style="font-size: 0.8rem; font-weight: bold; color: var(--main-color); text-transform: uppercase; letter-spacing: 0.5px;">' . $domaine['subtitle'] . '</span>' . "\n";
-        $html .= '            <h3 style="color: var(--text-color); margin: 6px 0 8px 0; font-size: 1.3rem;">' . $domaine['title'] . '</h3>' . "\n";
-        $html .= '            <p style="margin: 0; color: var(--text-secondary); font-size: 0.95rem;">' . $domaine['desc'] . '</p>' . "\n";
+        $html .= '            <span style="font-size: 0.8rem; font-weight: bold; color: var(--main-color); text-transform: uppercase; letter-spacing: 0.5px;">Référentiel officiel</span>' . "\n";
+        $html .= '            <h3 style="color: var(--text-color); margin: 6px 0 8px 0; font-size: 1.3rem;">' . htmlspecialchars($blocName, ENT_QUOTES, 'UTF-8') . '</h3>' . "\n";
+        $html .= '            <p style="margin: 0; color: var(--text-secondary); font-size: 0.95rem;">Compétences et sous-compétences mobilisées dans cette réalisation.</p>' . "\n";
         $html .= '        </div>' . "\n";
 
-        $blocRef = $referentielOfficiel[$key] ?? [];
         $competencesRef = $blocRef['competences'] ?? [];
         $blocProjet = $projetDetails[$key] ?? [];
 

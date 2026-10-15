@@ -24,5 +24,6 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
     <script src="/assets/js/navigation.js<?= $asset_version('/assets/js/navigation.js') ?>" defer></script>
+    <script src="/assets/js/components.js<?= $asset_version('assets/js/components.js') ?>" defer></script>
     <script src="/assets/js/admin.js<?= $asset_version('/assets/js/admin.js') ?>" defer></script>
 </head>
